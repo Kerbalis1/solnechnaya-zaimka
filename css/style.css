@@ -432,14 +432,14 @@ nav a:hover {
 
 
 
-/* TELEGRAM */
+/* ===== TELEGRAM ===== */
 
 
 .telegram {
 
+    background:transparent;
 
-    background:#229ED9;
-
+    box-shadow:none;
 
 }
 
@@ -447,11 +447,13 @@ nav a:hover {
 
 .telegram img {
 
+    width:35px;
 
-    width:24px;
+    height:35px;
 
-    height:24px;
+    object-fit:contain;
 
+    display:block;
 
 }
 
