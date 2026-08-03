@@ -4,41 +4,54 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     color: white;
 }
 
 
-/* Верхнее меню */
+/* ===== МЕНЮ ===== */
 
 header {
+
     position: absolute;
     top: 0;
     width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 25px 60px;
+
     z-index: 10;
+
 }
 
 
 .logo {
-    font-size: 28px;
+
+    font-size: 30px;
     font-weight: bold;
+
 }
 
 
 nav a {
+
     color: white;
     text-decoration: none;
+
     margin-left: 25px;
+
     font-size: 18px;
+
 }
 
 
-/* Главный экран */
+/* ===== ГЛАВНЫЙ ЭКРАН ===== */
+
 
 .hero {
 
@@ -52,128 +65,272 @@ nav a {
     url("https://images.unsplash.com/photo-1501785888041-af3ef285b470")
     center/cover;
 
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     text-align: center;
+
 }
 
 
 .hero-content {
 
-    max-width: 700px;
+    max-width: 750px;
 
 }
 
 
-h1 {
+.hero h1 {
 
     font-size: 64px;
+
     margin-bottom: 20px;
 
 }
 
 
-h2 {
+.hero h2 {
 
     font-size: 32px;
+
     margin-bottom: 20px;
 
 }
 
 
-p {
+.hero p {
 
     font-size: 22px;
+
     line-height: 1.5;
+
     margin-bottom: 35px;
 
 }
 
 
-/* Кнопка */
+/* ===== КНОПКА ===== */
+
 
 button {
 
     background: #f5a623;
 
-    color: white;
+    color:white;
 
-    border: none;
+    border:none;
 
-    padding: 18px 45px;
+    padding:18px 45px;
 
-    font-size: 20px;
+    font-size:20px;
 
-    border-radius: 30px;
+    border-radius:30px;
 
-    cursor: pointer;
+    cursor:pointer;
 
 }
 
 
 button:hover {
 
-    background: #d88900;
+    background:#d88900;
 
 }
+
+
+
+/* ===== ДОМИКИ ===== */
 
 
 .houses {
-    background: #f5f2e8;
-    color: #333;
-    padding: 80px 50px;
-    text-align: center;
+
+    background:#f5f2e8;
+
+    color:#333;
+
+    padding:80px 50px;
+
+    text-align:center;
+
 }
+
 
 .houses h2 {
-    color: #2e7d32;
-    font-size: 42px;
+
+    color:#2e7d32;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
 }
+
 
 .subtitle {
-    margin: 20px;
-    font-size: 20px;
-    color: #555;
+
+    font-size:20px;
+
+    margin-bottom:40px;
+
+    color:#555;
+
 }
+
+
 
 .house-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+
 }
+
+
 
 .house-card {
-    background: white;
-    width: 320px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+
+    background:white;
+
+    width:320px;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.15);
+
+
+    transition:0.3s;
+
+
 }
+
+
+
+.house-card:hover {
+
+    transform:translateY(-10px);
+
+}
+
+
 
 .house-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
+
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+
 }
+
+
 
 .house-card h3 {
-    color: #2e7d32;
-    font-size: 25px;
-    margin: 20px;
+
+
+    color:#2e7d32;
+
+    font-size:26px;
+
+    margin:20px 10px;
+
+
 }
+
+
 
 .house-card p {
-    color: #555;
-    font-size: 17px;
-    padding: 0 20px;
+
+
+    color:#555;
+
+    font-size:17px;
+
+    line-height:1.5;
+
+    padding:0 20px;
+
+
 }
 
+
+
 .house-card strong {
-    display: block;
-    color: #f5a623;
-    font-size: 22px;
-    margin: 20px;
+
+
+    display:block;
+
+    color:#f5a623;
+
+    font-size:22px;
+
+    margin:20px;
+
+
+}
+
+
+
+/* ===== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНА ===== */
+
+
+@media(max-width:768px){
+
+
+header {
+
+    flex-direction:column;
+
+    padding:20px;
+
+}
+
+
+nav {
+
+    margin-top:20px;
+
+}
+
+
+.hero h1 {
+
+    font-size:42px;
+
+}
+
+
+.hero h2 {
+
+    font-size:25px;
+
+}
+
+
+.house-container {
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
 }
