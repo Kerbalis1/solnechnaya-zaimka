@@ -284,20 +284,20 @@ button:hover {
 
 
 
-/* ===== TELEGRAM ===== */
+/* ===== TELEGRAM + MAX ===== */
 
 
 .footer {
 
     background:#f5f2e8;
 
-    width:100%;
-
     display:flex;
 
     justify-content:center;
 
     align-items:center;
+
+    gap:15px;
 
     padding:20px;
 
@@ -305,23 +305,27 @@ button:hover {
 
 
 
-.telegram-icon {
+.social-icon {
 
-    width:50px;
+    height:45px;
 
-    height:50px;
+    padding:0 20px;
 
-    background:#229ED9;
-
-    border-radius:50%;
+    border-radius:25px;
 
     display:flex;
 
-    justify-content:center;
-
     align-items:center;
 
-    box-shadow:0 5px 15px rgba(0,0,0,0.25);
+    gap:8px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:16px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
 
     transition:0.3s;
 
@@ -329,11 +333,19 @@ button:hover {
 
 
 
+.telegram-icon {
+
+    background:#229ED9;
+
+}
+
+
+
 .telegram-icon svg {
 
-    width:28px;
+    width:22px;
 
-    height:28px;
+    height:22px;
 
 }
 
@@ -347,11 +359,53 @@ button:hover {
 
 
 
-.telegram-icon:hover {
+.max-icon {
 
-    transform:translateY(-5px);
+    background:#6c4cff;
 
-    background:#0088cc;
+}
+
+
+
+.max-logo {
+
+    width:24px;
+
+    height:24px;
+
+    background:white;
+
+    color:#6c4cff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+}
+
+
+
+.social-icon:hover {
+
+    transform:translateY(-3px);
+
+}
+
+
+
+@media(max-width:768px){
+
+    .footer {
+
+        flex-direction:column;
+
+    }
 
 }
 
