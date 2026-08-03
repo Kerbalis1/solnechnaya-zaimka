@@ -319,11 +319,11 @@ button:hover {
 
     align-items:center;
 
-    text-decoration:none;
-
     box-shadow:0 4px 12px rgba(0,0,0,0.25);
 
     transition:0.3s;
+
+    text-decoration:none;
 
 }
 
@@ -337,19 +337,11 @@ button:hover {
 
 
 
-.telegram svg {
+.telegram img {
 
-    width:28px;
+    width:30px;
 
-    height:28px;
-
-}
-
-
-
-.telegram svg path {
-
-    fill:white;
+    height:30px;
 
 }
 
@@ -394,19 +386,6 @@ button:hover {
     transform:translateY(-4px);
 
 }
-
-
-
-@media(max-width:768px){
-
-    .footer {
-
-        gap:12px;
-
-    }
-
-}
-
 
 
 /* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
