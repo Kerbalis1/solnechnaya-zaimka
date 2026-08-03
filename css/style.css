@@ -290,7 +290,7 @@ button:hover {
 
 .footer {
 
-    background:#2e7d32;
+    background:#f5f2e8;
 
     display:flex;
 
@@ -298,16 +298,20 @@ button:hover {
 
     align-items:center;
 
-    padding:20px;
+    padding:25px;
 
 }
 
 
 .telegram-icon {
 
-    width:32px;
+    width:45px;
 
-    height:32px;
+    height:45px;
+
+    background:#229ED9;
+
+    border-radius:50%;
 
     display:flex;
 
@@ -315,32 +319,34 @@ button:hover {
 
     align-items:center;
 
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+
+    transition:0.3s;
+
 }
 
 
 .telegram-icon svg {
 
-    width:18px !important;
+    width:26px !important;
 
-    height:18px !important;
-
-    display:block;
+    height:26px !important;
 
 }
 
 
 .telegram-icon svg path {
 
-    fill:#229ED9;
+    fill:white;
 
 }
 
 
-.telegram-icon:hover svg {
+.telegram-icon:hover {
 
-    transform:scale(1.15);
+    transform:translateY(-3px);
 
-    transition:0.3s;
+    background:#0088cc;
 
 }
 
