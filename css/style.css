@@ -1,36 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f2e8;
-    color: #333;
-    text-align: center;
-    margin: 0;
-    padding: 40px;
+    color: white;
 }
+
+
+/* Верхнее меню */
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    z-index: 10;
+}
+
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+
+/* Главный экран */
+
+.hero {
+
+    height: 100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470")
+    center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.hero-content {
+
+    max-width: 700px;
+
+}
+
 
 h1 {
-    color: #2e7d32;
-    font-size: 48px;
+
+    font-size: 64px;
+    margin-bottom: 20px;
+
 }
+
 
 h2 {
-    color: #f9a825;
+
+    font-size: 32px;
+    margin-bottom: 20px;
+
 }
+
 
 p {
-    font-size: 20px;
+
+    font-size: 22px;
     line-height: 1.5;
+    margin-bottom: 35px;
+
 }
+
+
+/* Кнопка */
 
 button {
-    background-color: #2e7d32;
+
+    background: #f5a623;
+
     color: white;
+
     border: none;
-    padding: 15px 35px;
-    font-size: 18px;
-    border-radius: 10px;
+
+    padding: 18px 45px;
+
+    font-size: 20px;
+
+    border-radius: 30px;
+
     cursor: pointer;
+
 }
 
+
 button:hover {
-    background-color: #1b5e20;
+
+    background: #d88900;
+
 }
