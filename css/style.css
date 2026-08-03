@@ -461,12 +461,14 @@ nav a:hover {
 
 
 
-/* MAX */
+/* ===== MAX ===== */
 
 
 .max {
 
-    background:#6c4cff;
+    background:transparent;
+
+    box-shadow:none;
 
 }
 
@@ -474,9 +476,9 @@ nav a:hover {
 
 .max img {
 
-    width:20px;
+    width:45px;
 
-    height:20px;
+    height:45px;
 
     object-fit:contain;
 
