@@ -323,65 +323,33 @@ nav {
 }
 
 
-/* ===== КОНТАКТЫ ВНИЗУ СТРАНИЦЫ ===== */
-
+/* ===== ИКОНКА TELEGRAM ===== */
 
 .footer {
 
     background:#2e7d32;
-
-    color:white;
-
     text-align:center;
-
-    padding:35px 20px;
-
-}
-
-
-.footer p {
-
-    font-size:22px;
-
-    margin-bottom:15px;
-
-    font-weight:bold;
+    padding:25px;
 
 }
 
 
-.telegram-link {
+.telegram-icon svg {
 
-    display:inline-flex;
+    width:45px;
+    height:45px;
 
-    align-items:center;
-
-    gap:10px;
-
-    color:white;
-
-    text-decoration:none;
-
-    font-size:20px;
-
-    font-weight:bold;
+    fill:#229ED9;
 
     transition:0.3s;
 
 }
 
 
-.telegram-link:hover {
+.telegram-icon:hover svg {
 
-    color:#229ED9;
+    transform:scale(1.15);
 
-}
-
-
-.telegram-link svg {
-
-    width:30px;
-
-    height:30px;
+    fill:#0088cc;
 
 }
