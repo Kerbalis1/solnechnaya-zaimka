@@ -466,40 +466,23 @@ nav a:hover {
 
 .max {
 
-
     background:#6c4cff;
 
-
 }
 
 
 
-.max-logo {
+.max img {
 
+    width:30px;
 
-    width:34px;
+    height:30px;
 
-    height:34px;
+    object-fit:contain;
 
-    background:white;
-
-    color:#6c4cff;
-
-    border-radius:10px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    font-size:22px;
-
-    font-weight:bold;
-
+    display:block;
 
 }
-
 
 
 
