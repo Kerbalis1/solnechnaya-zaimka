@@ -463,7 +463,26 @@ nav a:hover {
 
 
 
+/* ===== VK ===== */
 
+.vk {
+
+    background:transparent;
+
+}
+
+
+.vk img {
+
+    width:35px;
+
+    height:35px;
+
+    object-fit:contain;
+
+    display:block;
+
+}
 /* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
 
 
