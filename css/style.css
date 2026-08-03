@@ -11,6 +11,7 @@ body {
 }
 
 
+
 /* ===== МЕНЮ ===== */
 
 header {
@@ -50,6 +51,7 @@ nav a {
 }
 
 
+
 /* ===== ГЛАВНЫЙ ЭКРАН ===== */
 
 
@@ -77,11 +79,13 @@ nav a {
 }
 
 
+
 .hero-content {
 
     max-width: 750px;
 
 }
+
 
 
 .hero h1 {
@@ -93,6 +97,7 @@ nav a {
 }
 
 
+
 .hero h2 {
 
     font-size: 32px;
@@ -100,6 +105,7 @@ nav a {
     margin-bottom: 20px;
 
 }
+
 
 
 .hero p {
@@ -111,6 +117,7 @@ nav a {
     margin-bottom: 35px;
 
 }
+
 
 
 /* ===== КНОПКА ===== */
@@ -133,6 +140,7 @@ button {
     cursor:pointer;
 
 }
+
 
 
 button:hover {
@@ -159,6 +167,7 @@ button:hover {
 }
 
 
+
 .houses h2 {
 
     color:#2e7d32;
@@ -168,6 +177,7 @@ button:hover {
     margin-bottom:15px;
 
 }
+
 
 
 .subtitle {
@@ -208,6 +218,7 @@ button:hover {
 
     box-shadow:
     0 5px 20px rgba(0,0,0,0.15);
+
 
     transition:0.3s;
 
@@ -275,7 +286,50 @@ button:hover {
 
 
 
-/* ===== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНА ===== */
+/* ===== TELEGRAM ВНИЗУ ===== */
+
+
+.footer {
+
+    background:#2e7d32;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+
+
+.telegram-icon svg {
+
+    width:50px;
+
+    height:50px;
+
+    fill:#229ED9;
+
+    transition:0.3s;
+
+}
+
+
+
+.telegram-icon:hover svg {
+
+    transform:scale(1.2);
+
+    fill:#0088cc;
+
+}
+
+
+
+/* ===== ТЕЛЕФОН ===== */
 
 
 @media(max-width:768px){
@@ -290,11 +344,13 @@ header {
 }
 
 
+
 nav {
 
     margin-top:20px;
 
 }
+
 
 
 .hero h1 {
@@ -304,11 +360,21 @@ nav {
 }
 
 
+
 .hero h2 {
 
     font-size:25px;
 
 }
+
+
+
+.hero p {
+
+    font-size:18px;
+
+}
+
 
 
 .house-container {
@@ -319,37 +385,5 @@ nav {
 
 }
 
-
-}
-
-
-/* ===== ИКОНКА TELEGRAM ===== */
-
-.footer {
-
-    background:#2e7d32;
-    text-align:center;
-    padding:25px;
-
-}
-
-
-.telegram-icon svg {
-
-    width:45px;
-    height:45px;
-
-    fill:#229ED9;
-
-    transition:0.3s;
-
-}
-
-
-.telegram-icon:hover svg {
-
-    transform:scale(1.15);
-
-    fill:#0088cc;
 
 }
