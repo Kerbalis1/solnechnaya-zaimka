@@ -11,21 +11,30 @@ html {
 
 
 body {
+
     font-family:Arial, sans-serif;
+
     color:white;
+
 }
+
 
 
 /* ===== МЕНЮ ===== */
 
+
 header {
 
     position:absolute;
+
     top:0;
+
     width:100%;
 
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
     padding:25px 60px;
@@ -35,24 +44,41 @@ header {
 }
 
 
+
 .logo {
 
     font-size:30px;
+
     font-weight:bold;
 
 }
 
 
+
 nav a {
 
     color:white;
+
     text-decoration:none;
 
     margin-left:25px;
 
     font-size:18px;
 
+    transition:0.3s;
+
 }
+
+
+
+nav a:hover {
+
+    color:#f5a623;
+
+}
+
+
+
 
 
 /* ===== ГЛАВНЫЙ ЭКРАН ===== */
@@ -63,21 +89,27 @@ nav a {
     height:100vh;
 
     background:
+
     linear-gradient(
         rgba(0,0,0,0.45),
         rgba(0,0,0,0.45)
     ),
+
     url("https://images.unsplash.com/photo-1501785888041-af3ef285b470")
+
     center/cover;
 
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
     text-align:center;
 
 }
+
 
 
 .hero-content {
@@ -87,41 +119,52 @@ nav a {
 }
 
 
+
 .hero h1 {
 
     font-size:64px;
+
     margin-bottom:20px;
 
 }
+
 
 
 .hero h2 {
 
     font-size:32px;
+
     margin-bottom:20px;
 
 }
 
 
+
 .hero p {
 
     font-size:22px;
+
     line-height:1.5;
+
     margin-bottom:35px;
 
 }
 
 
-/* ===== КНОПКА ===== */
 
 
-button {
+
+/* ===== КНОПКА БРОНИРОВАНИЯ ===== */
+
+
+.booking-btn {
+
+
+    display:inline-block;
 
     background:#f5a623;
 
     color:white;
-
-    border:none;
 
     padding:18px 45px;
 
@@ -129,12 +172,16 @@ button {
 
     border-radius:30px;
 
-    cursor:pointer;
+    text-decoration:none;
+
+    transition:0.3s;
+
 
 }
 
 
-button:hover {
+
+.booking-btn:hover {
 
     background:#d88900;
 
@@ -142,10 +189,13 @@ button:hover {
 
 
 
+
+
 /* ===== ДОМИКИ ===== */
 
 
 .houses {
+
 
     background:#f5f2e8;
 
@@ -155,10 +205,13 @@ button:hover {
 
     text-align:center;
 
+
 }
 
 
+
 .houses h2 {
+
 
     color:#356b3a;
 
@@ -166,10 +219,13 @@ button:hover {
 
     margin-bottom:15px;
 
+
 }
 
 
+
 .subtitle {
+
 
     font-size:20px;
 
@@ -177,11 +233,15 @@ button:hover {
 
     color:#555;
 
+
 }
 
 
 
+
+
 .house-container {
+
 
     display:flex;
 
@@ -191,11 +251,15 @@ button:hover {
 
     flex-wrap:wrap;
 
+
 }
 
 
 
+
+
 .house-card {
+
 
     background:white;
 
@@ -206,9 +270,12 @@ button:hover {
     overflow:hidden;
 
     box-shadow:
+
     0 5px 20px rgba(0,0,0,0.15);
 
+
     transition:0.3s;
+
 
 }
 
@@ -216,13 +283,16 @@ button:hover {
 
 .house-card:hover {
 
+
     transform:translateY(-10px);
+
 
 }
 
 
 
 .house-card img {
+
 
     width:100%;
 
@@ -232,13 +302,16 @@ button:hover {
 
     transition:0.4s;
 
+
 }
 
 
 
 .house-card:hover img {
 
+
     transform:scale(1.05);
+
 
 }
 
@@ -246,17 +319,20 @@ button:hover {
 
 .house-card h3 {
 
+
     color:#356b3a;
 
     font-size:22px;
 
     margin:20px 10px;
 
+
 }
 
 
 
 .house-card p {
+
 
     color:#555;
 
@@ -266,11 +342,13 @@ button:hover {
 
     padding:0 20px;
 
+
 }
 
 
 
 .house-card strong {
+
 
     display:block;
 
@@ -280,14 +358,19 @@ button:hover {
 
     margin:20px;
 
+
 }
+
+
 
 
 
 /* ===== TELEGRAM + MAX ===== */
 
 
+
 .footer {
+
 
     background:#f5f2e8;
 
@@ -301,15 +384,19 @@ button:hover {
 
     padding:20px;
 
+
 }
+
+
 
 
 
 .messenger {
 
-    width:50px;
 
-    height:50px;
+    width:55px;
+
+    height:55px;
 
     border-radius:50%;
 
@@ -319,19 +406,40 @@ button:hover {
 
     align-items:center;
 
-    box-shadow:0 4px 12px rgba(0,0,0,0.25);
+    text-decoration:none;
+
+    box-shadow:
+
+    0 4px 12px rgba(0,0,0,0.25);
+
 
     transition:0.3s;
 
-    text-decoration:none;
 
 }
 
 
 
+.messenger:hover {
+
+
+    transform:translateY(-4px);
+
+
+}
+
+
+
+
+
+/* TELEGRAM */
+
+
 .telegram {
 
+
     background:#229ED9;
+
 
 }
 
@@ -339,17 +447,28 @@ button:hover {
 
 .telegram img {
 
-    width:30px;
 
-    height:30px;
+    width:32px;
+
+    height:32px;
+
 
 }
 
 
 
+
+
+
+
+/* MAX */
+
+
 .max {
 
+
     background:#6c4cff;
+
 
 }
 
@@ -357,15 +476,16 @@ button:hover {
 
 .max-logo {
 
-    width:32px;
 
-    height:32px;
+    width:34px;
+
+    height:34px;
 
     background:white;
 
     color:#6c4cff;
 
-    border-radius:50%;
+    border-radius:10px;
 
     display:flex;
 
@@ -377,28 +497,40 @@ button:hover {
 
     font-weight:bold;
 
-}
-
-
-
-.messenger:hover {
-
-    transform:translateY(-4px);
 
 }
+
+
+
+
+
 
 
 /* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
 
 
+
 @media(max-width:768px){
+
 
 
 header {
 
+
     flex-direction:column;
 
     padding:20px;
+
+
+}
+
+
+
+.logo {
+
+
+    font-size:26px;
+
 
 }
 
@@ -406,7 +538,21 @@ header {
 
 nav {
 
+
     margin-top:20px;
+
+
+}
+
+
+
+nav a {
+
+
+    margin-left:10px;
+
+    font-size:15px;
+
 
 }
 
@@ -414,7 +560,9 @@ nav {
 
 .hero h1 {
 
+
     font-size:42px;
+
 
 }
 
@@ -422,7 +570,9 @@ nav {
 
 .hero h2 {
 
+
     font-size:25px;
+
 
 }
 
@@ -430,7 +580,19 @@ nav {
 
 .hero p {
 
+
     font-size:18px;
+
+
+}
+
+
+
+.houses {
+
+
+    padding:50px 20px;
+
 
 }
 
@@ -438,11 +600,34 @@ nav {
 
 .house-container {
 
+
     flex-direction:column;
 
     align-items:center;
 
+
 }
+
+
+
+.house-card {
+
+
+    width:90%;
+
+
+}
+
+
+
+.footer {
+
+
+    padding:20px;
+
+
+}
+
 
 
 }
