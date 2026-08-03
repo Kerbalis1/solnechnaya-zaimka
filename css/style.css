@@ -364,13 +364,10 @@ nav a:hover {
 
 
 
-
 /* ===== TELEGRAM + MAX ===== */
 
 
-
 .footer {
-
 
     background:#f5f2e8;
 
@@ -384,21 +381,15 @@ nav a:hover {
 
     padding:20px;
 
-
 }
-
-
 
 
 
 .messenger {
 
-
     width:45px;
 
     height:45px;
-
-    border-radius:50%;
 
     display:flex;
 
@@ -408,13 +399,7 @@ nav a:hover {
 
     text-decoration:none;
 
-    box-shadow:
-
-    0 4px 12px rgba(0,0,0,0.2);
-
-
     transition:0.3s;
-
 
 }
 
@@ -422,25 +407,21 @@ nav a:hover {
 
 .messenger:hover {
 
-
     transform:translateY(-4px);
 
-
 }
-
-
 
 
 
 /* ===== TELEGRAM ===== */
 
+
 .telegram {
 
     background:transparent;
 
-    box-shadow:none;
-
 }
+
 
 
 .telegram img {
@@ -457,34 +438,28 @@ nav a:hover {
 
 
 
-
-
-
-
 /* ===== MAX ===== */
+
 
 .max {
 
     background:transparent;
 
-    box-shadow:none;
-
 }
+
 
 
 .max img {
 
-    width:55px;
+    width:45px;
 
-    height:55px;
+    height:45px;
 
     object-fit:contain;
 
     display:block;
 
 }
-
-
 
 
 
