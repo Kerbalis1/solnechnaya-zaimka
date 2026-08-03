@@ -305,27 +305,23 @@ button:hover {
 
 
 
-.social-icon {
+.messenger {
 
-    height:45px;
+    width:50px;
 
-    padding:0 20px;
+    height:50px;
 
-    border-radius:25px;
+    border-radius:50%;
 
     display:flex;
 
-    align-items:center;
+    justify-content:center;
 
-    gap:8px;
+    align-items:center;
 
     text-decoration:none;
 
-    color:white;
-
-    font-size:16px;
-
-    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    box-shadow:0 4px 12px rgba(0,0,0,0.25);
 
     transition:0.3s;
 
@@ -333,7 +329,7 @@ button:hover {
 
 
 
-.telegram-icon {
+.telegram {
 
     background:#229ED9;
 
@@ -341,17 +337,17 @@ button:hover {
 
 
 
-.telegram-icon svg {
+.telegram svg {
 
-    width:22px;
+    width:28px;
 
-    height:22px;
+    height:28px;
 
 }
 
 
 
-.telegram-icon svg path {
+.telegram svg path {
 
     fill:white;
 
@@ -359,7 +355,7 @@ button:hover {
 
 
 
-.max-icon {
+.max {
 
     background:#6c4cff;
 
@@ -369,9 +365,9 @@ button:hover {
 
 .max-logo {
 
-    width:24px;
+    width:32px;
 
-    height:24px;
+    height:32px;
 
     background:white;
 
@@ -385,15 +381,17 @@ button:hover {
 
     align-items:center;
 
+    font-size:22px;
+
     font-weight:bold;
 
 }
 
 
 
-.social-icon:hover {
+.messenger:hover {
 
-    transform:translateY(-3px);
+    transform:translateY(-4px);
 
 }
 
@@ -403,7 +401,7 @@ button:hover {
 
     .footer {
 
-        flex-direction:column;
+        gap:12px;
 
     }
 
