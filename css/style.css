@@ -1,14 +1,18 @@
 /* ===== ОСНОВА ===== */
 
 * {
+
     margin:0;
     padding:0;
     box-sizing:border-box;
+
 }
 
 
 html {
+
     scroll-behavior:smooth;
+
 }
 
 
@@ -29,6 +33,7 @@ header {
     position:absolute;
 
     top:0;
+
     left:0;
 
     width:100%;
@@ -36,6 +41,8 @@ header {
     display:flex;
 
     justify-content:flex-end;
+
+    align-items:center;
 
     padding:25px 60px;
 
@@ -100,9 +107,11 @@ nav a:hover {
 
 
 
+/* ===== КОНТЕНТ ГЛАВНОГО ЭКРАНА ===== */
+
 .hero-content {
 
-    max-width:800px;
+    max-width:850px;
 
     display:flex;
 
@@ -114,13 +123,37 @@ nav a:hover {
 
 
 
-/* ===== НАДПИСЬ С ОБЛАКАМИ ===== */
+/* ===== ЛОГОТИП ===== */
+
+.hero-logo {
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero-logo img {
+
+    width:100px;
+
+    height:100px;
+
+    object-fit:contain;
+
+    display:block;
+
+}
+
+
+
+/* ===== НАЗВАНИЕ С ОБЛАКАМИ ===== */
 
 .cloud-text {
 
     font-size:64px;
 
-    font-weight:800;
+    font-weight:900;
 
     line-height:1.2;
 
@@ -131,7 +164,7 @@ nav a:hover {
 
     background-size:200% auto;
 
-    background-position:0 center;
+    background-position:center;
 
     background-repeat:repeat-x;
 
@@ -145,12 +178,12 @@ nav a:hover {
     -webkit-text-fill-color:transparent;
 
 
+    animation:cloudMove 20s linear infinite;
+
+
     text-shadow:
 
-    0 0 15px rgba(255,255,255,0.6);
-
-
-    animation:cloudMove 20s linear infinite;
+    0 0 15px rgba(255,255,255,0.7);
 
 }
 
@@ -175,27 +208,7 @@ nav a:hover {
 
 }
 
-/* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
 
-@media(max-width:768px) {
-
-
-    .cloud-text {
-
-        font-size:42px;
-
-    }
-
-
-    .hero-logo img {
-
-        width:60px;
-
-        height:60px;
-
-    }
-
-}
 
 /* ===== ПОДЗАГОЛОВОК ===== */
 
@@ -214,6 +227,8 @@ nav a:hover {
     font-size:22px;
 
     line-height:1.5;
+
+    max-width:700px;
 
     margin-bottom:35px;
 
@@ -267,7 +282,7 @@ nav a:hover {
 
 
 
-h2 {
+.houses h2 {
 
     font-size:40px;
 
@@ -293,6 +308,8 @@ h2 {
 
 
 
+/* ===== КАРТОЧКА ДОМИКА ===== */
+
 .card {
 
     width:300px;
@@ -303,7 +320,10 @@ h2 {
 
     overflow:hidden;
 
-    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,0.15);
+
 
     transition:0.3s;
 
@@ -349,6 +369,10 @@ h2 {
 
     line-height:1.5;
 
+    color:#555;
+
+    padding:0 20px;
+
 }
 
 
@@ -374,6 +398,20 @@ h2 {
     padding:70px 40px;
 
     text-align:center;
+
+    background:white;
+
+}
+
+
+
+.services h2 {
+
+    font-size:40px;
+
+    color:#356b3a;
+
+    margin-bottom:40px;
 
 }
 
@@ -405,6 +443,18 @@ h2 {
 
     font-size:20px;
 
+    transition:0.3s;
+
+}
+
+
+
+.service-list div:hover {
+
+    transform:translateY(-5px);
+
+    background:#28552e;
+
 }
 
 
@@ -417,7 +467,27 @@ h2 {
 
     text-align:center;
 
-    padding:70px;
+    padding:70px 30px;
+
+}
+
+
+
+.contacts h2 {
+
+    font-size:40px;
+
+    color:#356b3a;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.contacts p {
+
+    font-size:22px;
 
 }
 
@@ -427,7 +497,9 @@ h2 {
 
     color:#356b3a;
 
-    font-size:22px;
+    text-decoration:none;
+
+    font-weight:bold;
 
 }
 
@@ -451,9 +523,21 @@ footer a {
 
     color:white;
 
+    text-decoration:none;
+
     margin:15px;
 
-    text-decoration:none;
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+
+
+
+footer a:hover {
+
+    color:#f5a623;
 
 }
 
@@ -461,12 +545,24 @@ footer a {
 
 /* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
 
+
 @media(max-width:768px){
+
 
 
 header {
 
     padding:20px;
+
+    justify-content:center;
+
+}
+
+
+
+nav {
+
+    text-align:center;
 
 }
 
@@ -482,12 +578,31 @@ nav a {
 
 
 
-.sun-text {
+/* ===== ЛОГОТИП ===== */
+
+
+.hero-logo img {
+
+    width:70px;
+
+    height:70px;
+
+}
+
+
+
+/* ===== НАЗВАНИЕ ===== */
+
+
+.cloud-text {
 
     font-size:42px;
 
 }
 
+
+
+/* ===== ТЕКСТ ===== */
 
 
 .hero h2 {
@@ -502,15 +617,39 @@ nav a {
 
     font-size:18px;
 
+    padding:0 20px;
+
 }
 
 
 
-.hero-logo img {
+/* ===== КНОПКА ===== */
 
-    width:60px;
 
-    height:60px;
+.btn {
+
+    padding:15px 35px;
+
+    font-size:18px;
+
+}
+
+
+
+/* ===== ДОМИКИ ===== */
+
+
+.houses {
+
+    padding:50px 20px;
+
+}
+
+
+
+.houses h2 {
+
+    font-size:32px;
 
 }
 
@@ -529,6 +668,62 @@ nav a {
 .card {
 
     width:90%;
+
+}
+
+
+
+/* ===== УСЛУГИ ===== */
+
+
+.services {
+
+    padding:50px 20px;
+
+}
+
+
+
+.services h2 {
+
+    font-size:32px;
+
+}
+
+
+
+.service-list {
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+
+.service-list div {
+
+    width:90%;
+
+}
+
+
+
+/* ===== КОНТАКТЫ ===== */
+
+
+.contacts {
+
+    padding:50px 20px;
+
+}
+
+
+
+.contacts h2 {
+
+    font-size:32px;
 
 }
 
