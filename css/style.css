@@ -162,18 +162,14 @@ nav a:hover {
     letter-spacing:1px;
 
 
-    /* GIF из папки images */
-
     background-image:url("../images/giphy.gif");
 
-    background-size:cover;
+    background-size:200% auto;
 
     background-position:center;
 
-    background-repeat:no-repeat;
+    background-repeat:repeat-x;
 
-
-    /* облака внутри букв */
 
     color:transparent;
 
@@ -184,14 +180,8 @@ nav a:hover {
     -webkit-text-fill-color:transparent;
 
 
-    /* красивый контур */
+    -webkit-text-stroke:2px rgba(255,255,255,0.95);
 
-    -webkit-text-stroke:
-
-    2px rgba(255,255,255,0.95);
-
-
-    /* глубина */
 
     filter:
 
