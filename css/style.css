@@ -51,23 +51,12 @@ header {
 
     display:flex;
 
-    align-items:center;
+    flex-direction:column;
 
-    gap:15px;
-
-}
-
-.logo img {
-
-    width:180px;
-
-    height:180px;
-
-    object-fit:contain;
-
-    display:block;
+    align-items:flex-start;
 
 }
+
 
 .logo-title {
 
@@ -77,7 +66,22 @@ header {
 
     font-weight:bold;
 
-    text-shadow:2px 2px 6px rgba(0,0,0,0.6);
+    margin-bottom:10px;
+
+    text-shadow:2px 2px 6px rgba(0,0,0,0.7);
+
+}
+
+
+.logo img {
+
+    width:130px;
+
+    height:130px;
+
+    object-fit:contain;
+
+    display:block;
 
 }
 
