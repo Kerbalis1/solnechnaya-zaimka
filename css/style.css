@@ -150,11 +150,65 @@ nav a:hover {
 /* ===== ОСНОВНОЙ ТЕКСТ ===== */
 
 
-.hero h1 {
+/* ===== ПРЕМИАЛЬНЫЙ ТЕКСТ ===== */
+
+.gold-text {
 
     font-size:64px;
 
+    font-weight:800;
+
     margin-bottom:20px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #fff4b0,
+        #f5b942,
+        #fff8d6,
+        #d89420,
+        #fff4b0
+    );
+
+
+    background-size:300% auto;
+
+
+    color:transparent;
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+
+    animation:goldShine 6s linear infinite;
+
+
+    text-shadow:
+
+    0 0 15px rgba(255,190,60,0.35);
+
+}
+
+
+
+/* движение золотого блика */
+
+@keyframes goldShine {
+
+    0% {
+
+        background-position:0% center;
+
+    }
+
+
+    100% {
+
+        background-position:300% center;
+
+    }
 
 }
 
