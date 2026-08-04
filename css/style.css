@@ -151,8 +151,6 @@ nav a:hover {
 
 .cloud-text {
 
-    position:relative;
-
     font-size:64px;
 
     font-weight:900;
@@ -164,14 +162,18 @@ nav a:hover {
     letter-spacing:1px;
 
 
-    background-image:url("../images/clouds.gif");
+    /* GIF из папки images */
 
-    background-size:250% auto;
+    background-image:url("../images/giphy.gif");
 
-    background-position:0 center;
+    background-size:cover;
 
-    background-repeat:repeat-x;
+    background-position:center;
 
+    background-repeat:no-repeat;
+
+
+    /* облака внутри букв */
 
     color:transparent;
 
@@ -182,49 +184,20 @@ nav a:hover {
     -webkit-text-fill-color:transparent;
 
 
-    /* дорогой контур */
+    /* красивый контур */
 
     -webkit-text-stroke:
 
     2px rgba(255,255,255,0.95);
 
 
-    /* объём и свечение */
+    /* глубина */
 
     filter:
 
     drop-shadow(0 4px 8px rgba(0,0,0,0.8))
 
-    drop-shadow(0 0 20px rgba(255,220,120,0.7));
-
-
-    /* движение облаков */
-
-    animation:
-
-    cloudLuxury 18s linear infinite;
-
-}
-
-
-
-/* ===== ДВИЖЕНИЕ ОБЛАКОВ ===== */
-
-@keyframes cloudLuxury {
-
-
-    0% {
-
-        background-position:0 center;
-
-    }
-
-
-    100% {
-
-        background-position:250% center;
-
-    }
+    drop-shadow(0 0 15px rgba(255,220,120,0.6));
 
 }
 
