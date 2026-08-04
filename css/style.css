@@ -124,29 +124,34 @@ nav a:hover {
 
     object-fit:contain;
 
-    margin-bottom:20px;
+    display:block;
+
+    margin:0 auto 20px;
 
 }
 
 
 
-/* ===== ОБЛАКА ВНУТРИ БУКВ ===== */
+/* ===== НАДПИСЬ С ОБЛАКАМИ ===== */
 
 .cloud-text {
 
-    font-size:78px;
+    font-size:82px;
 
     font-weight:900;
 
+    line-height:1.1;
+
     margin-bottom:20px;
+
 
     background-image:url("../images/clouds.gif");
 
-    background-size:250% auto;
+    background-size:300% auto;
+
+    background-repeat:repeat-x;
 
     background-position:0 center;
-
-    background-repeat:no-repeat;
 
 
     color:transparent;
@@ -156,34 +161,59 @@ nav a:hover {
     background-clip:text;
 
 
-    animation:cloudMove 12s linear infinite;
+    animation:cloudMove 15s linear infinite;
 
 
     text-shadow:
 
-    0 0 20px rgba(255,255,255,0.5);
+    0 0 15px rgba(255,255,255,0.6);
 
 }
 
 
 
+/* ===== ДВИЖЕНИЕ ОБЛАКОВ ===== */
+
 @keyframes cloudMove {
 
-    0% {
+    from {
 
         background-position:0 center;
 
     }
 
 
-    100% {
+    to {
 
-        background-position:250% center;
+        background-position:300% center;
 
     }
 
 }
 
+
+
+/* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
+
+@media(max-width:768px) {
+
+
+    .cloud-text {
+
+        font-size:42px;
+
+    }
+
+
+    .hero-logo img {
+
+        width:60px;
+
+        height:60px;
+
+    }
+
+}
 
 /* ===== ПОДЗАГОЛОВОК ===== */
 
