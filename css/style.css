@@ -20,28 +20,48 @@ body {
 
 
 
-/* ===== ЛОГОТИП ===== */
+/* ===== МЕНЮ ===== */
 
-.logo {
+header {
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
 
     display:flex;
 
-    align-items:flex-start;
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 60px;
+
+    z-index:10;
 
 }
 
+
+
+/* ===== ЛОГОТИП ===== */
 
 .logo img {
 
-    width:100px;
+    width:80px;
 
-    height:100px;
+    height:80px;
 
     object-fit:contain;
 
+    display:block;
+
 }
 
-/* ССЫЛКИ МЕНЮ */
+
+
+/* ===== ССЫЛКИ МЕНЮ ===== */
 
 nav a {
 
@@ -54,6 +74,13 @@ nav a {
     font-size:18px;
 
     transition:0.3s;
+
+}
+
+
+nav a:hover {
+
+    color:#f5a623;
 
 }
 
