@@ -124,27 +124,30 @@ nav a:hover {
 
     object-fit:contain;
 
-    margin-bottom:15px;
+    margin-bottom:20px;
 
 }
 
 
 
-/* ===== НАЗВАНИЕ С СОЛНЦЕМ ВНУТРИ ===== */
+/* ===== ОБЛАКА ВНУТРИ БУКВ ===== */
 
-.sun-text {
+.cloud-text {
 
-    font-size:64px;
+    font-size:78px;
 
-    font-weight:800;
+    font-weight:900;
 
     margin-bottom:20px;
 
-    background-image:url("../images/sun.gif");
+    background-image:url("../images/clouds.gif");
 
-    background-size:200% auto;
+    background-size:250% auto;
 
-    background-position:center;
+    background-position:0 center;
+
+    background-repeat:no-repeat;
+
 
     color:transparent;
 
@@ -152,12 +155,34 @@ nav a:hover {
 
     background-clip:text;
 
+
+    animation:cloudMove 12s linear infinite;
+
+
     text-shadow:
 
-    0 0 15px rgba(255,200,50,0.5);
+    0 0 20px rgba(255,255,255,0.5);
 
 }
 
+
+
+@keyframes cloudMove {
+
+    0% {
+
+        background-position:0 center;
+
+    }
+
+
+    100% {
+
+        background-position:250% center;
+
+    }
+
+}
 
 
 /* ===== ПОДЗАГОЛОВОК ===== */
