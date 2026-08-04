@@ -118,11 +118,11 @@ nav a:hover {
 
 .cloud-text {
 
-    font-size:82px;
+    font-size:64px;
 
-    font-weight:900;
+    font-weight:800;
 
-    line-height:1.1;
+    line-height:1.2;
 
     margin-bottom:20px;
 
@@ -131,13 +131,12 @@ nav a:hover {
 
     background-size:200% auto;
 
-    background-position:center;
+    background-position:0 center;
 
     background-repeat:repeat-x;
 
 
     color:transparent;
-
 
     -webkit-background-clip:text;
 
@@ -146,18 +145,9 @@ nav a:hover {
     -webkit-text-fill-color:transparent;
 
 
-    /* чёткий контур букв */
+    text-shadow:
 
-    -webkit-text-stroke:3px white;
-
-
-    /* свечение */
-
-    filter:
-
-    drop-shadow(0 0 8px rgba(0,0,0,0.8))
-
-    drop-shadow(0 0 15px rgba(255,200,80,0.8));
+    0 0 15px rgba(255,255,255,0.6);
 
 
     animation:cloudMove 20s linear infinite;
@@ -165,6 +155,8 @@ nav a:hover {
 }
 
 
+
+/* ===== ДВИЖЕНИЕ ОБЛАКОВ ===== */
 
 @keyframes cloudMove {
 
