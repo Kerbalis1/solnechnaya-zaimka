@@ -151,6 +151,8 @@ nav a:hover {
 
 .cloud-text {
 
+    position:relative;
+
     font-size:64px;
 
     font-weight:900;
@@ -159,10 +161,12 @@ nav a:hover {
 
     margin-bottom:20px;
 
+    letter-spacing:1px;
+
 
     background-image:url("../images/clouds.gif");
 
-    background-size:220% auto;
+    background-size:250% auto;
 
     background-position:0 center;
 
@@ -178,23 +182,27 @@ nav a:hover {
     -webkit-text-fill-color:transparent;
 
 
-    /* движение облаков внутри букв */
+    /* дорогой контур */
 
-    animation:cloudMove 18s linear infinite;
+    -webkit-text-stroke:
 
-
-    /* чёткость букв */
-
-    -webkit-text-stroke:1.5px rgba(255,255,255,0.9);
+    2px rgba(255,255,255,0.95);
 
 
-    /* свечение и глубина */
+    /* объём и свечение */
 
     filter:
 
-    drop-shadow(0 3px 5px rgba(0,0,0,0.8))
+    drop-shadow(0 4px 8px rgba(0,0,0,0.8))
 
-    drop-shadow(0 0 12px rgba(255,255,255,0.5));
+    drop-shadow(0 0 20px rgba(255,220,120,0.7));
+
+
+    /* движение облаков */
+
+    animation:
+
+    cloudLuxury 18s linear infinite;
 
 }
 
@@ -202,23 +210,23 @@ nav a:hover {
 
 /* ===== ДВИЖЕНИЕ ОБЛАКОВ ===== */
 
-@keyframes cloudMove {
+@keyframes cloudLuxury {
 
-    from {
+
+    0% {
 
         background-position:0 center;
 
     }
 
 
-    to {
+    100% {
 
-        background-position:220% center;
+        background-position:250% center;
 
     }
 
 }
-
 
 
 /* ===== ПОДЗАГОЛОВОК ===== */
