@@ -162,9 +162,9 @@ nav a:hover {
 
     background-image:url("../images/clouds.gif");
 
-    background-size:200% auto;
+    background-size:220% auto;
 
-    background-position:center;
+    background-position:0 center;
 
     background-repeat:repeat-x;
 
@@ -178,12 +178,23 @@ nav a:hover {
     -webkit-text-fill-color:transparent;
 
 
-    animation:cloudMove 20s linear infinite;
+    /* движение облаков внутри букв */
+
+    animation:cloudMove 18s linear infinite;
 
 
-    text-shadow:
+    /* чёткость букв */
 
-    0 0 15px rgba(255,255,255,0.7);
+    -webkit-text-stroke:1.5px rgba(255,255,255,0.9);
+
+
+    /* свечение и глубина */
+
+    filter:
+
+    drop-shadow(0 3px 5px rgba(0,0,0,0.8))
+
+    drop-shadow(0 0 12px rgba(255,255,255,0.5));
 
 }
 
@@ -202,7 +213,7 @@ nav a:hover {
 
     to {
 
-        background-position:200% center;
+        background-position:220% center;
 
     }
 
