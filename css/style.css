@@ -47,15 +47,37 @@ header {
 
 /* ===== ЛОГОТИП ===== */
 
+.logo {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
 .logo img {
 
-    width:80px;
+    width:120px;
 
-    height:80px;
+    height:120px;
 
     object-fit:contain;
 
     display:block;
+
+}
+
+.logo-title {
+
+    color:white;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    text-shadow:2px 2px 6px rgba(0,0,0,0.6);
 
 }
 
