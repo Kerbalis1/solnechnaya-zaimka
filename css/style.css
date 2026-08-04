@@ -133,8 +133,11 @@ nav a:hover {
 
     background-position:center;
 
+    background-repeat:repeat-x;
 
-    color:white;
+
+    color:transparent;
+
 
     -webkit-background-clip:text;
 
@@ -143,17 +146,21 @@ nav a:hover {
     -webkit-text-fill-color:transparent;
 
 
-    animation:cloudMove 20s linear infinite;
+    /* чёткий контур букв */
+
+    -webkit-text-stroke:3px white;
 
 
-    -webkit-text-stroke:2px rgba(255,255,255,0.5);
-
+    /* свечение */
 
     filter:
 
-    drop-shadow(0 0 10px rgba(255,255,255,0.8))
+    drop-shadow(0 0 8px rgba(0,0,0,0.8))
 
-    drop-shadow(0 0 20px rgba(255,190,70,0.6));
+    drop-shadow(0 0 15px rgba(255,200,80,0.8));
+
+
+    animation:cloudMove 20s linear infinite;
 
 }
 
@@ -175,7 +182,6 @@ nav a:hover {
     }
 
 }
-
 
 /* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
 
