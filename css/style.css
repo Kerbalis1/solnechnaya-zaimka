@@ -22,12 +22,12 @@ body {
 
 /* ===== МЕНЮ ===== */
 
-
 header {
 
     position:absolute;
 
     top:0;
+    left:0;
 
     width:100%;
 
@@ -41,9 +41,12 @@ header {
 
     z-index:10;
 
+    box-sizing:border-box;
+
 }
 
 
+/* ЛОГОТИП */
 
 .logo {
 
@@ -51,9 +54,12 @@ header {
 
     font-weight:bold;
 
+    color:white;
+
 }
 
 
+/* ССЫЛКИ МЕНЮ */
 
 nav a {
 
@@ -70,14 +76,13 @@ nav a {
 }
 
 
+/* ЭФФЕКТ НАВЕДЕНИЯ */
 
 nav a:hover {
 
     color:#f5a623;
 
 }
-
-
 
 
 
@@ -95,9 +100,7 @@ nav a:hover {
         rgba(0,0,0,0.45)
     ),
 
-    url("../images/glavnay.jpg")
-
-    center/cover;
+    url("../images/glavnay.jpg") center/cover no-repeat;
 
 
     display:flex;
@@ -107,6 +110,18 @@ nav a:hover {
     align-items:center;
 
     text-align:center;
+
+}
+
+
+
+/* ТЕКСТ НА ГЛАВНОМ ЭКРАНЕ */
+
+.hero-content {
+
+    max-width:750px;
+
+    color:white;
 
 }
 
