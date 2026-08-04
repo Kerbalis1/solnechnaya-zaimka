@@ -21,6 +21,7 @@ body {
 }
 
 
+
 /* ===== ШАПКА ===== */
 
 header {
@@ -36,29 +37,12 @@ header {
 
     justify-content:flex-end;
 
-    align-items:flex-start;
-
     padding:25px 60px;
 
     z-index:10;
 
 }
 
-
-
-/* ===== ЛОГОТИП НА ГЛАВНОМ ЭКРАНЕ ===== */
-
-.hero-logo img {
-
-    width:90px;
-
-    height:90px;
-
-    object-fit:contain;
-
-    margin-bottom:15px;
-
-}
 
 
 /* ===== МЕНЮ ===== */
@@ -87,7 +71,6 @@ nav a:hover {
 
 
 /* ===== ГЛАВНЫЙ ЭКРАН ===== */
-
 
 .hero {
 
@@ -131,28 +114,25 @@ nav a:hover {
 
 
 
-/* ===== ЛОГОТИП НАД ГЛАВНОЙ НАДПИСЬЮ ===== */
+/* ===== ЛОГОТИП ===== */
 
 .hero-logo img {
 
-    width:150px;
+    width:80px;
 
-    height:150px;
+    height:80px;
 
     object-fit:contain;
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 
 }
 
 
 
-/* ===== ОСНОВНОЙ ТЕКСТ ===== */
+/* ===== НАЗВАНИЕ С СОЛНЦЕМ ВНУТРИ ===== */
 
-
-/* ===== ПРЕМИАЛЬНЫЙ ТЕКСТ ===== */
-
-.gold-text {
+.sun-text {
 
     font-size:64px;
 
@@ -160,20 +140,11 @@ nav a:hover {
 
     margin-bottom:20px;
 
-    background:
+    background-image:url("../images/sun.gif");
 
-    linear-gradient(
-        90deg,
-        #fff4b0,
-        #f5b942,
-        #fff8d6,
-        #d89420,
-        #fff4b0
-    );
+    background-size:200% auto;
 
-
-    background-size:300% auto;
-
+    background-position:center;
 
     color:transparent;
 
@@ -181,38 +152,15 @@ nav a:hover {
 
     background-clip:text;
 
-
-    animation:goldShine 6s linear infinite;
-
-
     text-shadow:
 
-    0 0 15px rgba(255,190,60,0.35);
+    0 0 15px rgba(255,200,50,0.5);
 
 }
 
 
 
-/* движение золотого блика */
-
-@keyframes goldShine {
-
-    0% {
-
-        background-position:0% center;
-
-    }
-
-
-    100% {
-
-        background-position:300% center;
-
-    }
-
-}
-
-
+/* ===== ПОДЗАГОЛОВОК ===== */
 
 .hero h2 {
 
@@ -235,8 +183,8 @@ nav a:hover {
 }
 
 
-/* ===== КНОПКА ===== */
 
+/* ===== КНОПКА ===== */
 
 .btn {
 
@@ -259,6 +207,7 @@ nav a:hover {
 }
 
 
+
 .btn:hover {
 
     background:#c98216;
@@ -268,7 +217,6 @@ nav a:hover {
 
 
 /* ===== ДОМИКИ ===== */
-
 
 .houses {
 
@@ -384,7 +332,6 @@ h2 {
 
 /* ===== УСЛУГИ ===== */
 
-
 .services {
 
     padding:70px 40px;
@@ -427,7 +374,6 @@ h2 {
 
 /* ===== КОНТАКТЫ ===== */
 
-
 .contacts {
 
     background:#f6f2e8;
@@ -446,14 +392,11 @@ h2 {
 
     font-size:22px;
 
-    text-decoration:none;
-
 }
 
 
 
 /* ===== FOOTER ===== */
-
 
 footer {
 
@@ -481,7 +424,6 @@ footer a {
 
 /* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
 
-
 @media(max-width:768px){
 
 
@@ -489,32 +431,8 @@ header {
 
     padding:20px;
 
-    flex-direction:column;
-
 }
 
-
-.logo span {
-
-    font-size:25px;
-
-}
-
-
-.logo img {
-
-    width:80px;
-
-    height:80px;
-
-}
-
-
-nav {
-
-    margin-top:20px;
-
-}
 
 
 nav a {
@@ -526,11 +444,13 @@ nav a {
 }
 
 
-.hero h1 {
+
+.sun-text {
 
     font-size:42px;
 
 }
+
 
 
 .hero h2 {
@@ -538,6 +458,25 @@ nav a {
     font-size:25px;
 
 }
+
+
+
+.hero p {
+
+    font-size:18px;
+
+}
+
+
+
+.hero-logo img {
+
+    width:60px;
+
+    height:60px;
+
+}
+
 
 
 .cards {
@@ -549,10 +488,12 @@ nav a {
 }
 
 
+
 .card {
 
     width:90%;
 
 }
+
 
 }
