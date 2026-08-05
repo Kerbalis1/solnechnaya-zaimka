@@ -812,7 +812,7 @@ VK
 
 </div>
 
- <script>
+<script>
 
 
 function openBooking(){
@@ -832,7 +832,7 @@ function openBooking(){
 
 
 
-    // перенос количества гостей
+    // перенос гостей
 
     document.getElementById("popupGuests").selectedIndex =
     document.getElementById("guests").selectedIndex;
@@ -860,9 +860,47 @@ function closeBooking(){
 
 
 
+
+
+function checkBooking(){
+
+
+    let checkin =
+    document.getElementById("popupCheckin").value;
+
+
+    let checkout =
+    document.getElementById("popupCheckout").value;
+
+
+    let guests =
+    document.getElementById("popupGuests").value;
+
+
+
+    if(checkin === "" || checkout === ""){
+
+
+        alert("Выберите дату заезда и выезда");
+
+
+        return;
+
+
+    }
+
+
+
+    alert(
+        "Свободные домики проверяются\n\n" +
+        "Заезд: " + checkin +
+        "\nВыезд: " + checkout +
+        "\nГости: " + guests
+    );
+
+
+}
+
+
+
 </script>
-
-
-</body>
-
-</html>
