@@ -699,6 +699,133 @@ drop-shadow(0 3px 6px rgba(0,0,0,0.85));
 
 
 
+/* ===== ОКНО БРОНИРОВАНИЯ ===== */
+
+
+.booking-popup{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.65);
+
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
+
+    z-index:9999;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.booking-window{
+
+    width:90%;
+
+    max-width:650px;
+
+    padding:35px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(25px);
+
+    -webkit-backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,0.3);
+
+    box-shadow:0 20px 60px rgba(0,0,0,0.5);
+
+    color:white;
+
+}
+
+
+
+.close-booking{
+
+    float:right;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:35px;
+
+    cursor:pointer;
+
+}
+
+
+
+details{
+
+    background:rgba(255,255,255,0.12);
+
+    padding:20px;
+
+    border-radius:20px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+summary{
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+
+
+.amenities{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+
+
+.amenities span{
+
+    background:#e9a23b;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+}
+
+
+
 /* ===== FOOTER ===== */
 
 
@@ -712,6 +839,62 @@ footer{
 
 }
 
+
+footer a{
+
+    color:white;
+
+    margin:15px;
+
+    text-decoration:none;
+
+}
+
+
+
+/* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
+
+
+@media(max-width:900px){
+
+
+header{
+
+    flex-direction:column;
+
+    gap:15px;
+
+    left:15px;
+
+    right:15px;
+
+}
+
+
+.booking-window{
+
+    width:95%;
+
+    padding:25px;
+
+}
+
+
+.booking-window h2{
+
+    font-size:25px;
+
+}
+
+
+summary{
+
+    font-size:18px;
+
+}
+
+
+}
 
 footer a{
 
