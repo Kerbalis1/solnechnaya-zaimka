@@ -216,24 +216,80 @@ nav a:hover{
 
 
 
-/* ===== ЛОГОТИП ===== */
+/* ===== ПРЕМИАЛЬНЫЙ ЛОГОТИП 150x150 ===== */
 
+.hero-logo {
 
-.hero-logo{
+    margin-bottom:25px;
 
-    margin-bottom:20px;
+    position:relative;
 
 }
 
 
 
-.hero-logo img{
+/* золотое свечение вокруг логотипа */
 
-    width:100px;
+.hero-logo::before {
 
-    height:100px;
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:
+
+    radial-gradient(
+        circle,
+        rgba(255,215,80,0.45),
+        transparent 70%
+    );
+
+    filter:blur(18px);
+
+    z-index:-1;
+
+}
+
+
+
+
+.hero-logo img {
+
+    width:150px;
+
+    height:150px;
 
     object-fit:contain;
+
+    display:block;
+
+
+    filter:
+
+    drop-shadow(0 8px 18px rgba(0,0,0,0.7))
+
+    drop-shadow(0 0 25px rgba(255,215,100,0.55));
+
+
+    transition:.4s ease;
+
+}
+
+
+
+.hero-logo img:hover {
+
+    transform:scale(1.05);
 
 }
 
