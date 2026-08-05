@@ -963,6 +963,57 @@ nav{
 
 }
 
+    /* ===== КОМПАКТНАЯ ПАНЕЛЬ В ОКНЕ БРОНИРОВАНИЯ ===== */
+
+
+.booking-window .booking-mini{
+
+    width:auto;
+
+    display:flex;
+
+    flex-direction:row;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    gap:10px;
+
+    padding:15px;
+
+}
+
+
+
+.booking-window .booking-field{
+
+    width:auto;
+
+}
+
+
+
+.booking-window .booking-field input,
+.booking-window .booking-field select{
+
+    width:130px;
+
+    height:38px;
+
+}
+
+
+
+.booking-window .booking-btn{
+
+    width:auto;
+
+    height:38px;
+
+    padding:0 18px;
+
+}
 
 
 .booking-window{
@@ -980,11 +1031,6 @@ summary{
     font-size:18px;
 
 }
-
-
-
-
-}   
 
 
 /* ===== КАРТОЧКИ В ОКНЕ БРОНИРОВАНИЯ ===== */
