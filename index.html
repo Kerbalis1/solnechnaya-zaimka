@@ -818,25 +818,103 @@ VK
 function openBooking(){
 
 
-    let checkin = document.getElementById("checkin").value;
-
-    let checkout = document.getElementById("checkout").value;
-
-    let guests = document.getElementById("guests").value;
-
-
-
-    document.getElementById("popupCheckin").value = checkin;
-
-
-    document.getElementById("popupCheckout").value = checkout;
-
-
-    document.getElementById("popupGuests").value = guests;
-
-
+    // открыть окно
 
     document.getElementById("bookingPopup").style.display = "flex";
 
 
+
+    // перенос даты заезда
+
+    document.getElementById("popupCheckin").value =
+    document.getElementById("checkin").value;
+
+
+
+    // перенос даты выезда
+
+    document.getElementById("popupCheckout").value =
+    document.getElementById("checkout").value;
+
+
+
+    // перенос гостей
+
+    document.getElementById("popupGuests").value =
+    document.getElementById("guests").value;
+
+
+
 }
+
+
+
+
+function closeBooking(){
+
+
+    document.getElementById("bookingPopup").style.display = "none";
+
+
+}
+
+
+
+
+
+function checkBooking(){
+
+
+
+    let checkin =
+    document.getElementById("popupCheckin").value;
+
+
+
+    let checkout =
+    document.getElementById("popupCheckout").value;
+
+
+
+    let guests =
+    document.getElementById("popupGuests").value;
+
+
+
+    if(checkin === "" || checkout === ""){
+
+
+        alert("Выберите дату заезда и выезда");
+
+
+        return;
+
+
+    }
+
+
+
+    // здесь потом можно подключить реальное бронирование
+
+    document.querySelector(".recommend").innerHTML =
+
+    "Найдено размещение на выбранные даты:<br><br>" +
+
+    "📅 Заезд: " + checkin +
+
+    "<br>📅 Выезд: " + checkout +
+
+    "<br>👥 Гости: " + guests;
+
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>
