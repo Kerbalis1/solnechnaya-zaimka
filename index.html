@@ -16,7 +16,6 @@
 <body>
 
 
-
 <!-- ===== ШАПКА ===== -->
 
 <header>
@@ -56,7 +55,6 @@ VK
 
 
 </header>
-
 
 
 
@@ -106,16 +104,21 @@ VK
 
 
 
+<!-- ===== ПАНЕЛЬ БРОНИРОВАНИЯ ===== -->
+
+
 <div class="booking-mini">
+
 
 
 <div class="booking-field">
 
 <span>Заезд</span>
 
-<input type="date">
+<input type="date" id="checkin">
 
 </div>
+
 
 
 
@@ -123,9 +126,10 @@ VK
 
 <span>Выезд</span>
 
-<input type="date">
+<input type="date" id="checkout">
 
 </div>
+
 
 
 
@@ -134,7 +138,7 @@ VK
 <span>Гости</span>
 
 
-<select>
+<select id="guests">
 
 <option>1 взрослый</option>
 <option>2 взрослых</option>
@@ -164,6 +168,7 @@ VK
 
 
 
+
 <button class="booking-btn" onclick="openBooking()">
 
 Проверить наличие
@@ -181,13 +186,7 @@ VK
 
 </section>
 
-
-
-
-
-
-
-<!-- ===== ДОМИКИ ===== -->
+ <!-- ===== ДОМИКИ ===== -->
 
 
 <section class="houses" id="houses">
@@ -207,18 +206,22 @@ VK
 
 <img src="images/banya2.jpg">
 
+
 <h3>
- Баня с комнатой отдыха
+Баня с комнатой отдыха
 </h3>
+
 
 <p>
 До 8–10 гостей<br>
 Чан | Бассейн | Мангал
 </p>
 
+
 <strong>
 от 5000 ₽
 </strong>
+
 
 </div>
 
@@ -230,17 +233,21 @@ VK
 
 <img src="images/beranda1.jpg">
 
+
 <h3>
- Панорамная терраса
+Панорамная терраса
 </h3>
+
 
 <p>
 Бар | Музыка | Кальяны
 </p>
 
+
 <strong>
 от 1000 ₽
 </strong>
+
 
 </div>
 
@@ -252,17 +259,21 @@ VK
 
 <img src="images/kotedg.jpg.jpg">
 
+
 <h3>
- Большой дом
+Большой дом
 </h3>
+
 
 <p>
 2 этажа | 2 спальни | Камин
 </p>
 
+
 <strong>
 от 8000 ₽
 </strong>
+
 
 </div>
 
@@ -272,8 +283,6 @@ VK
 
 
 </section>
-
-
 
 
 
@@ -296,13 +305,24 @@ VK
 <div class="service-list">
 
 
-<div>🔥 Баня</div>
+<div>
+🔥 Баня
+</div>
 
-<div>🛁 Чан</div>
 
-<div>🌲 Мангал</div>
+<div>
+🛁 Чан
+</div>
 
-<div>🏡 Отдых на природе</div>
+
+<div>
+🌲 Мангал
+</div>
+
+
+<div>
+🏡 Отдых на природе
+</div>
 
 
 </div>
@@ -364,69 +384,115 @@ VK
 
 </footer>
 
-
-
-
-
-
-
-<!-- ===== ОКНО БРОНИРОВАНИЯ ===== -->
+ <!-- ===== ОКНО БРОНИРОВАНИЯ ===== -->
 
 
 <div class="booking-popup" id="bookingPopup">
 
 
-<div class="booking-window booking-result">
+
+<div class="booking-window">
+
 
 
 <button class="close-booking" onclick="closeBooking()">
+
 ×
+
 </button>
 
 
 
 <h2>
+
 Бронирование
+
 </h2>
 
 
 
 
-<!-- ===== ИНФОРМАЦИЯ ПОИСКА ===== -->
+
+<!-- ===== ПАНЕЛЬ В ОКНЕ ===== -->
 
 
 <div class="booking-mini">
 
-    <div class="booking-field">
-        <span>Заезд</span>
-        <input type="date" id="popupCheckin">
-    </div>
 
-    <div class="booking-field">
-        <span>Выезд</span>
-        <input type="date" id="popupCheckout">
-    </div>
 
-    <div class="booking-field">
-        <span>Гости</span>
+<div class="booking-field">
 
-        <select id="popupGuests">
-            <option>1 взрослый</option>
-            <option>2 взрослых</option>
-            <option>3 взрослых</option>
-            <option>4 взрослых</option>
-            <option>5 взрослых</option>
-            <option>6 взрослых</option>
-            <option>7 взрослых</option>
-            <option>8 взрослых</option>
-            <option>9 взрослых</option>
-            <option>10 взрослых</option>
-        </select>
-    </div>
+<span>
+Заезд
+</span>
 
-    <button class="booking-btn">
-        Проверить наличие
-    </button>
+<input type="date" id="popupCheckin">
+
+</div>
+
+
+
+
+<div class="booking-field">
+
+<span>
+Выезд
+</span>
+
+<input type="date" id="popupCheckout">
+
+</div>
+
+
+
+
+<div class="booking-field">
+
+<span>
+Гости
+</span>
+
+
+
+<select id="popupGuests">
+
+<option>1 взрослый</option>
+<option>2 взрослых</option>
+<option>3 взрослых</option>
+<option>4 взрослых</option>
+<option>5 взрослых</option>
+<option>6 взрослых</option>
+<option>7 взрослых</option>
+<option>8 взрослых</option>
+<option>9 взрослых</option>
+<option>10 взрослых</option>
+<option>11 взрослых</option>
+<option>12 взрослых</option>
+<option>13 взрослых</option>
+<option>14 взрослых</option>
+<option>15 взрослых</option>
+<option>16 взрослых</option>
+<option>17 взрослых</option>
+<option>18 взрослых</option>
+<option>19 взрослых</option>
+<option>20 взрослых</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+<button class="booking-btn">
+
+Проверить наличие
+
+</button>
+
+
 
 </div>
 
@@ -449,14 +515,13 @@ VK
 
 
 
-
-<!-- ===== КАРТОЧКА 1 ===== -->
+<!-- ===== КАРТОЧКА ДОМИКА 1 ===== -->
 
 
 <div class="room-card">
 
 
-<img src="images/banya2.jpg" alt="Баня">
+<img src="images/banya2.jpg">
 
 
 
@@ -480,45 +545,50 @@ VK
 
 <p>
 
-Комфортабельный дом отдыха.
-Включает комнату отдыха, парилку и зону для гостей.
+Комната отдыха, парилка,
+зона для гостей.
 
 </p>
+
 
 
 
 <div class="amenities">
 
 
-<span>❄ Кондиционер</span>
+<span>
+❄ Кондиционер
+</span>
 
-<span>📶 Wi-Fi</span>
 
-<span>📺 Телевизор</span>
+<span>
+📶 Wi-Fi
+</span>
 
-<span>🚿 Душ</span>
 
-<span>🔥 Парилка</span>
+<span>
+📺 Телевизор
+</span>
 
-<span>🪣 Тропическое ведро</span>
+
+<span>
+🔥 Парилка
+</span>
 
 
 </div>
+
 
 
 
 <div class="room-footer">
 
 
-<div>
-
 <b>
 
 Предоплата 6000 ₽
 
 </b>
-
-</div>
 
 
 <button>
@@ -531,12 +601,11 @@ VK
 </div>
 
 
-</div>
-
 
 </div>
 
 
+</div>
 
 
 
@@ -544,13 +613,14 @@ VK
 
 
 
-<!-- ===== КАРТОЧКА 2 ===== -->
+
+<!-- ===== КАРТОЧКА ДОМИКА 2 ===== -->
 
 
 <div class="room-card">
 
 
-<img src="images/beranda1.jpg" alt="Терраса">
+<img src="images/beranda1.jpg">
 
 
 
@@ -574,27 +644,35 @@ VK
 
 <p>
 
-Просторная терраса для отдыха,
-вечеринок и семейных встреч.
+Терраса для отдыха,
+семейных встреч и мероприятий.
 
 </p>
+
 
 
 
 <div class="amenities">
 
 
-<span>🍹 Бар</span>
+<span>
+🍹 Бар
+</span>
 
-<span>🎵 Музыка</span>
 
-<span>💨 Кальяны</span>
+<span>
+🎵 Музыка
+</span>
 
-<span>🍽 Еда</span>
 
-<span>📶 Wi-Fi</span>
+<span>
+📶 Wi-Fi
+</span>
 
-<span>❄ Кондиционер</span>
+
+<span>
+❄ Кондиционер
+</span>
 
 
 </div>
@@ -605,15 +683,11 @@ VK
 <div class="room-footer">
 
 
-<div>
-
 <b>
 
 Предоплата 6000 ₽
 
 </b>
-
-</div>
 
 
 <button>
@@ -639,14 +713,13 @@ VK
 
 
 
-
-<!-- ===== КАРТОЧКА 3 ===== -->
+<!-- ===== КАРТОЧКА ДОМИКА 3 ===== -->
 
 
 <div class="room-card">
 
 
-<img src="images/kotedg.jpg.jpg" alt="Большой дом">
+<img src="images/kotedg.jpg.jpg">
 
 
 
@@ -670,23 +743,35 @@ VK
 
 <p>
 
-Дом для семьи или большой компании.
-Две спальни, камин, уютная гостиная и Wi-Fi.
+Дом для большой компании.
+Две спальни, камин, гостиная.
 
 </p>
+
 
 
 
 <div class="amenities">
 
 
-<span>🏠 2 этажа</span>
+<span>
+🏠 2 этажа
+</span>
 
-<span>🛏 2 спальни</span>
 
-<span>🔥 Камин</span>
+<span>
+🛏 2 спальни
+</span>
 
-<span>📶 Wi-Fi</span>
+
+<span>
+🔥 Камин
+</span>
+
+
+<span>
+📶 Wi-Fi
+</span>
 
 
 </div>
@@ -697,15 +782,11 @@ VK
 <div class="room-footer">
 
 
-<div>
-
 <b>
 
 Предоплата 6000 ₽
 
 </b>
-
-</div>
 
 
 <button>
@@ -726,37 +807,62 @@ VK
 
 
 
-
-
 </div>
 
 
 </div>
 
-
-
-
-
-<script>
+ <script>
 
 
 function openBooking(){
 
-    // открываем окно
-    document.getElementById("bookingPopup").style.display="flex";
 
-
-    // переносим данные из главной панели во всплывающее окно
+    // перенос даты заезда
 
     document.getElementById("popupCheckin").value =
     document.getElementById("checkin").value;
 
 
+
+    // перенос даты выезда
+
     document.getElementById("popupCheckout").value =
     document.getElementById("checkout").value;
 
 
+
+    // перенос количества гостей
+
     document.getElementById("popupGuests").selectedIndex =
     document.getElementById("guests").selectedIndex;
 
+
+
+    // открыть окно
+
+    document.getElementById("bookingPopup").style.display = "flex";
+
+
 }
+
+
+
+
+
+function closeBooking(){
+
+
+    document.getElementById("bookingPopup").style.display = "none";
+
+
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>
