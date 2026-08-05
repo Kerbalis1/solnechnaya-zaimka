@@ -925,21 +925,6 @@ header{
     left:15px;
 
     right:15px;
-/* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
-
-
-@media(max-width:900px){
-
-
-header{
-
-    flex-direction:column;
-
-    gap:15px;
-
-    left:15px;
-
-    right:15px;
 
 }
 
@@ -963,6 +948,100 @@ nav{
 
 }
 
+
+
+.cloud-text{
+
+    font-size:42px;
+
+}
+
+
+
+.hero-logo img{
+
+    width:90px;
+
+    height:90px;
+
+}
+
+
+
+.hero h2{
+
+    font-size:25px;
+
+}
+
+
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+
+
+.cards{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+
+.card{
+
+    width:90%;
+
+}
+
+
+
+/* ===== МОБИЛЬНАЯ БРОНЬ ===== */
+
+
+.booking-mini{
+
+    flex-direction:column;
+
+    width:90%;
+
+    padding:20px;
+
+}
+
+
+
+.booking-field{
+
+    width:100%;
+
+}
+
+
+
+.booking-field input,
+.booking-field select{
+
+    width:100%;
+
+}
+
+
+
+.booking-btn{
+
+    width:100%;
+
+}
+
+
+}
 
 
 /* ===== МОБИЛЬНОЕ НАЗВАНИЕ ===== */
