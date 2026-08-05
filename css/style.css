@@ -147,7 +147,7 @@ nav a:hover {
 
 
 
-/* ===== НАЗВАНИЕ С ОБЛАКАМИ ===== */
+/* ===== НАЗВАНИЕ С ЖИВОЙ АНИМАЦИЕЙ ===== */
 
 .cloud-text {
 
@@ -163,15 +163,15 @@ nav a:hover {
 
     letter-spacing:2px;
 
-    padding:5px 10px;
+    padding:5px;
 
     background-image:url("../images/giphy3.gif");
 
-    background-size:contain;
+    background-size:140% auto;
 
     background-position:center center;
 
-    background-repeat:repeat;
+    background-repeat:repeat-x;
 
     background-clip:text;
     -webkit-background-clip:text;
@@ -181,9 +181,9 @@ nav a:hover {
 
     -webkit-text-stroke:1.5px rgba(255,255,255,0.95);
 
-    text-shadow:
-        0 2px 4px rgba(0,0,0,0.8),
-        0 0 12px rgba(255,215,0,0.35);
+    filter:
+        drop-shadow(0 3px 6px rgba(0,0,0,0.85))
+        drop-shadow(0 0 12px rgba(255,215,0,0.35));
 
 }
 
