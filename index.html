@@ -191,11 +191,11 @@
     </div>
 
 
-    <button class="booking-btn">
+  <button class="booking-btn" onclick="openBooking()">
 
-        Проверить наличие
+    Проверить наличие
 
-    </button>
+</button>
 
 </div>
 
@@ -477,8 +477,189 @@ VK
 
 
 
+    <!-- ===== FOOTER ===== -->
 
 
-</body>
+<footer>
 
-</html>
+
+<a href="https://t.me/Solnechnaya_Zaimka_bot">
+
+Telegram
+
+</a>
+
+
+
+<a href="https://vk.ru/publicsolnechnaya_zaimka">
+
+VK
+
+</a>
+
+
+
+</footer>
+
+
+
+
+
+<!-- ===== ОКНО БРОНИРОВАНИЯ ===== -->
+
+
+<div class="booking-popup" id="bookingPopup">
+
+
+    <div class="booking-window">
+
+
+        <button class="close-booking" onclick="closeBooking()">
+            ×
+        </button>
+
+
+        <h2>
+            Выберите вариант отдыха
+        </h2>
+
+
+
+        <!-- ===== БАНЯ ===== -->
+
+
+        <details>
+
+            <summary>
+                🔥 Баня с комнатой отдыха
+            </summary>
+
+
+            <p>
+                Уютная баня для компании до 8–10 гостей.
+            </p>
+
+
+            <div class="amenities">
+
+                <span>📶 Wi-Fi</span>
+
+                <span>🚿 Душ</span>
+
+                <span>🪣 Тропическое ведро</span>
+
+                <span>🔥 Парилка</span>
+
+                <span>📺 ТВ</span>
+
+                <span>🪑 Стол на 8–10 гостей</span>
+
+            </div>
+
+
+        </details>
+
+
+
+
+
+        <!-- ===== ТЕРРАСА ===== -->
+
+
+        <details>
+
+            <summary>
+                🌅 Панорамная терраса
+            </summary>
+
+
+            <p>
+                Просторная терраса для отдыха с красивым видом.
+                Атмосфера для встреч и вечернего отдыха.
+            </p>
+
+
+            <div class="amenities">
+
+                <span>🍹 Бар</span>
+
+                <span>🎵 Музыка</span>
+
+                <span>💨 Кальяны</span>
+
+                <span>🍽 Еда</span>
+
+                <span>📶 Wi-Fi</span>
+
+                <span>❄ Кондиционер</span>
+
+            </div>
+
+
+        </details>
+
+
+
+
+
+        <!-- ===== БОЛЬШОЙ ДОМ ===== -->
+
+
+        <details>
+
+            <summary>
+                🏡 Большой дом
+            </summary>
+
+
+            <p>
+                Двухэтажный дом для комфортного отдыха семьи или большой компании.
+            </p>
+
+
+            <div class="amenities">
+
+                <span>🏠 2 этажа</span>
+
+                <span>🛏 2 спальни</span>
+
+                <span>🔥 Камин</span>
+
+                <span>📶 Wi-Fi</span>
+
+            </div>
+
+
+        </details>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+function openBooking(){
+
+    document.getElementById("bookingPopup").style.display = "flex";
+
+}
+
+
+
+function closeBooking(){
+
+    document.getElementById("bookingPopup").style.display = "none";
+
+}
+
+
+
+</script>
