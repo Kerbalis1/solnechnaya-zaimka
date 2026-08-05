@@ -40,19 +40,35 @@ header {
 
     display:flex;
 
-    justify-content:flex-end;
+    justify-content:flex-start;
 
     align-items:center;
 
     padding:25px 60px;
 
-    z-index:10;
+    z-index:100;
 
 }
 
 
 
 /* ===== МЕНЮ ===== */
+
+nav {
+
+    display:flex;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+
+
+/* ===== ССЫЛКИ МЕНЮ ===== */
 
 nav a {
 
@@ -62,16 +78,21 @@ nav a {
 
     font-size:18px;
 
-    margin-left:25px;
+    font-weight:600;
+
+    letter-spacing:0.5px;
 
     transition:0.3s;
 
 }
 
 
+
 nav a:hover {
 
     color:#f5a623;
+
+    transform:translateY(-2px);
 
 }
 
