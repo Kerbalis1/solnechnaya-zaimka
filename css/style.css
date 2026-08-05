@@ -151,6 +151,8 @@ nav a:hover {
 
 .cloud-text {
 
+    display:inline-block;
+
     font-size:64px;
 
     font-weight:900;
@@ -159,35 +161,29 @@ nav a:hover {
 
     margin-bottom:20px;
 
-    letter-spacing:1px;
+    letter-spacing:2px;
 
+    padding:5px 10px;
 
     background-image:url("../images/giphy3.gif");
 
-    background-size:200% auto;
+    background-size:contain;
 
-    background-position:center;
+    background-position:center center;
 
-    background-repeat:repeat-x;
-
-
-    color:transparent;
-
-    -webkit-background-clip:text;
+    background-repeat:repeat;
 
     background-clip:text;
+    -webkit-background-clip:text;
 
+    color:transparent;
     -webkit-text-fill-color:transparent;
 
+    -webkit-text-stroke:1.5px rgba(255,255,255,0.95);
 
-    -webkit-text-stroke:2px rgba(255,255,255,0.95);
-
-
-    filter:
-
-    drop-shadow(0 4px 8px rgba(0,0,0,0.8))
-
-    drop-shadow(0 0 15px rgba(255,220,120,0.6));
+    text-shadow:
+        0 2px 4px rgba(0,0,0,0.8),
+        0 0 12px rgba(255,215,0,0.35);
 
 }
 
