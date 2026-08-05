@@ -929,7 +929,7 @@ nav{
 
 
 
-.booking-mini{
+.hero .booking-mini{
 
     flex-direction:column;
 
@@ -968,9 +968,9 @@ nav{
 
 .booking-window{
 
-    width:750px;
+    width:95%;
 
-    max-width:90%;
+    max-width:650px;
 
     padding:25px;
 
@@ -1079,5 +1079,19 @@ nav{
     justify-content:space-between;
 
     align-items:center;
+
+}
+
+/* ===== ФОТО ДОМИКОВ В ОКНЕ БРОНИРОВАНИЯ ===== */
+
+.booking-window .room-card img{
+
+    width:120px;
+
+    height:80px;
+
+    object-fit:cover;
+
+    border-radius:12px;
 
 }
