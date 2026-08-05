@@ -742,18 +742,21 @@ VK
 
 function openBooking(){
 
-document.getElementById("bookingPopup").style.display="flex";
+    // открываем окно
+    document.getElementById("bookingPopup").style.display="flex";
+
+
+    // переносим данные из главной панели во всплывающее окно
+
+    document.getElementById("popupCheckin").value =
+    document.getElementById("checkin").value;
+
+
+    document.getElementById("popupCheckout").value =
+    document.getElementById("checkout").value;
+
+
+    document.getElementById("popupGuests").selectedIndex =
+    document.getElementById("guests").selectedIndex;
 
 }
-
-
-
-function closeBooking(){
-
-document.getElementById("bookingPopup").style.display="none";
-
-}
-
-
-
-</script>
