@@ -829,26 +829,7 @@ summary{
 /* ===== FOOTER ===== */
 
 
-footer{
-
-    background:#356b3a;
-
-    padding:30px;
-
-    text-align:center;
-
-}
-
-
-footer a{
-
-    color:white;
-
-    margin:15px;
-
-    text-decoration:none;
-
-}
+@@ -725,6 +852,62 @@ footer a{
 
 
 
@@ -909,6 +890,8 @@ footer a{
 
 
 
+
+/* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== *
 
 /* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
 
