@@ -486,7 +486,7 @@ VK
 
 
 
-<button class="booking-btn">
+<button class="booking-btn" onclick="checkBooking()">
 
 Проверить наличие
 
@@ -818,89 +818,25 @@ VK
 function openBooking(){
 
 
-    // перенос даты заезда
+    let checkin = document.getElementById("checkin").value;
 
-    document.getElementById("popupCheckin").value =
-    document.getElementById("checkin").value;
+    let checkout = document.getElementById("checkout").value;
 
-
-
-    // перенос даты выезда
-
-    document.getElementById("popupCheckout").value =
-    document.getElementById("checkout").value;
+    let guests = document.getElementById("guests").value;
 
 
 
-    // перенос гостей
-
-    document.getElementById("popupGuests").selectedIndex =
-    document.getElementById("guests").selectedIndex;
+    document.getElementById("popupCheckin").value = checkin;
 
 
+    document.getElementById("popupCheckout").value = checkout;
 
-    // открыть окно
+
+    document.getElementById("popupGuests").value = guests;
+
+
 
     document.getElementById("bookingPopup").style.display = "flex";
 
 
 }
-
-
-
-
-
-function closeBooking(){
-
-
-    document.getElementById("bookingPopup").style.display = "none";
-
-
-}
-
-
-
-
-
-function checkBooking(){
-
-
-    let checkin =
-    document.getElementById("popupCheckin").value;
-
-
-    let checkout =
-    document.getElementById("popupCheckout").value;
-
-
-    let guests =
-    document.getElementById("popupGuests").value;
-
-
-
-    if(checkin === "" || checkout === ""){
-
-
-        alert("Выберите дату заезда и выезда");
-
-
-        return;
-
-
-    }
-
-
-
-    alert(
-        "Свободные домики проверяются\n\n" +
-        "Заезд: " + checkin +
-        "\nВыезд: " + checkout +
-        "\nГости: " + guests
-    );
-
-
-}
-
-
-
-</script>
