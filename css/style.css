@@ -338,9 +338,7 @@ nav a:hover{
 
     filter:
 
-    drop-shadow(0 3px 7px black)
-
-    drop-shadow(0 0 12px rgba(255,215,0,.5));
+drop-shadow(0 3px 6px rgba(0,0,0,0.85));
 
 }
 
