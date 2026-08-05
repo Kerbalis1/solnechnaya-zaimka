@@ -982,4 +982,59 @@ summary{
 }
 
 
+
+
+}   
+
+
+/* ===== КАРТОЧКИ В ОКНЕ БРОНИРОВАНИЯ ===== */
+
+.room-card{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-bottom:20px;
+
+    padding:20px;
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    align-items:flex-start;
+
+}
+
+.room-card img{
+
+    width:140px;
+
+    height:100px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    flex-shrink:0;
+
+}
+
+.room-info{
+
+    flex:1;
+
+}
+
+.room-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
 }
