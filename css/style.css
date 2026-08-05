@@ -1,34 +1,27 @@
 /* ===== ОСНОВА ===== */
 
-* {
-
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
-
 }
 
 
-html {
-
+html{
     scroll-behavior:smooth;
-
 }
 
 
-body {
-
+body{
     font-family:Arial, sans-serif;
-
     color:#333;
-
 }
 
 
 
 /* ===== ШАПКА ===== */
 
-header {
+header{
 
     position:absolute;
 
@@ -40,7 +33,7 @@ header {
 
     display:flex;
 
-    justify-content:flex-start;
+    justify-content:space-between;
 
     align-items:center;
 
@@ -50,17 +43,17 @@ header {
 
 
 
-/* ===== МЕНЮ PREMIUM ===== */
+/* ===== ЛЕВОЕ МЕНЮ ===== */
 
-nav {
+nav{
 
     display:flex;
 
     align-items:center;
 
-    gap:18px;
+    gap:10px;
 
-    padding:14px 28px;
+    padding:12px 22px;
 
     border-radius:50px;
 
@@ -74,66 +67,125 @@ nav {
 
     box-shadow:
 
-        0 8px 30px rgba(0,0,0,0.25),
-
-        inset 0 1px 0 rgba(255,255,255,0.25);
+    0 8px 30px rgba(0,0,0,0.25);
 
 }
 
 
 
-/* ===== ССЫЛКИ ===== */
+nav a{
 
-nav a {
-
-    color:#ffffff;
+    color:white;
 
     text-decoration:none;
 
-    font-size:17px;
+    font-size:16px;
 
     font-weight:600;
 
-    padding:10px 18px;
+    padding:10px 15px;
 
     border-radius:30px;
 
-    transition:all .35s ease;
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    background:#e9a23b;
+
+    color:white;
 
 }
 
 
 
-/* ===== НАВЕДЕНИЕ ===== */
+/* ===== ПРАВАЯ ПАНЕЛЬ ===== */
 
-nav a:hover {
 
-    background:rgba(245,162,35,0.95);
+.header-contact{
 
-    color:#ffffff;
+    display:flex;
 
-    box-shadow:0 0 18px rgba(245,162,35,.55);
+    align-items:center;
 
-    transform:translateY(-2px);
+    gap:15px;
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    box-shadow:
+
+    0 8px 30px rgba(0,0,0,0.25);
 
 }
+
+
+
+.header-contact a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.header-contact a:hover{
+
+    color:#f5a623;
+
+}
+
+
+
+.phone{
+
+    padding-right:15px;
+
+    border-right:1px solid rgba(255,255,255,.5);
+
+}
+
+
 
 
 
 /* ===== ГЛАВНЫЙ ЭКРАН ===== */
 
-.hero {
+
+.hero{
 
     height:100vh;
+
 
     background:
 
     linear-gradient(
-        rgba(0,0,0,0.45),
-        rgba(0,0,0,0.45)
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
     ),
 
     url("../images/glavnay2.jpg.jfif") center/cover no-repeat;
+
 
 
     display:flex;
@@ -150,9 +202,7 @@ nav a:hover {
 
 
 
-/* ===== КОНТЕНТ ГЛАВНОГО ЭКРАНА ===== */
-
-.hero-content {
+.hero-content{
 
     max-width:850px;
 
@@ -168,7 +218,8 @@ nav a:hover {
 
 /* ===== ЛОГОТИП ===== */
 
-.hero-logo {
+
+.hero-logo{
 
     margin-bottom:20px;
 
@@ -176,7 +227,7 @@ nav a:hover {
 
 
 
-.hero-logo img {
+.hero-logo img{
 
     width:100px;
 
@@ -184,15 +235,16 @@ nav a:hover {
 
     object-fit:contain;
 
-    display:block;
-
 }
 
 
 
-/* ===== НАЗВАНИЕ С ЖИВОЙ АНИМАЦИЕЙ ===== */
 
-.cloud-text {
+
+/* ===== ТЕКСТ С GIF ===== */
+
+
+.cloud-text{
 
     display:inline-block;
 
@@ -206,34 +258,41 @@ nav a:hover {
 
     letter-spacing:2px;
 
-    padding:5px;
 
     background-image:url("../images/giphy3.gif");
 
     background-size:140% auto;
 
-    background-position:center center;
+    background-position:center;
 
     background-repeat:repeat-x;
 
-    background-clip:text;
-    -webkit-background-clip:text;
 
     color:transparent;
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
     -webkit-text-fill-color:transparent;
 
-    -webkit-text-stroke:1.5px rgba(255,255,255,0.95);
+
+    -webkit-text-stroke:1.5px white;
+
 
     filter:
-        drop-shadow(0 3px 6px rgba(0,0,0,0.85))
-        drop-shadow(0 0 12px rgba(255,215,0,0.35));
+
+    drop-shadow(0 3px 7px black)
+
+    drop-shadow(0 0 12px rgba(255,215,0,.5));
 
 }
 
 
-/* ===== ПОДЗАГОЛОВОК ===== */
 
-.hero h2 {
+
+
+.hero h2{
 
     font-size:35px;
 
@@ -243,7 +302,7 @@ nav a:hover {
 
 
 
-.hero p {
+.hero p{
 
     font-size:22px;
 
@@ -257,11 +316,11 @@ nav a:hover {
 
 
 
+
 /* ===== КНОПКА ===== */
 
-.btn {
 
-    display:inline-block;
+.btn{
 
     padding:18px 45px;
 
@@ -275,13 +334,12 @@ nav a:hover {
 
     font-size:20px;
 
-    transition:0.3s;
+    transition:.3s;
 
 }
 
 
-
-.btn:hover {
+.btn:hover{
 
     background:#c98216;
 
@@ -289,9 +347,12 @@ nav a:hover {
 
 
 
+
+
 /* ===== ДОМИКИ ===== */
 
-.houses {
+
+.houses{
 
     padding:80px 50px;
 
@@ -303,7 +364,9 @@ nav a:hover {
 
 
 
-.houses h2 {
+.houses h2,
+.services h2,
+.contacts h2{
 
     font-size:40px;
 
@@ -315,7 +378,7 @@ nav a:hover {
 
 
 
-.cards {
+.cards{
 
     display:flex;
 
@@ -329,9 +392,7 @@ nav a:hover {
 
 
 
-/* ===== КАРТОЧКА ДОМИКА ===== */
-
-.card {
+.card{
 
     width:300px;
 
@@ -341,18 +402,14 @@ nav a:hover {
 
     overflow:hidden;
 
-    box-shadow:
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
 
-    0 5px 20px rgba(0,0,0,0.15);
-
-
-    transition:0.3s;
+    transition:.3s;
 
 }
 
 
-
-.card:hover {
+.card:hover{
 
     transform:translateY(-10px);
 
@@ -360,7 +417,7 @@ nav a:hover {
 
 
 
-.card img {
+.card img{
 
     width:100%;
 
@@ -372,7 +429,7 @@ nav a:hover {
 
 
 
-.card h3 {
+.card h3{
 
     color:#356b3a;
 
@@ -384,11 +441,9 @@ nav a:hover {
 
 
 
-.card p {
+.card p{
 
     font-size:17px;
-
-    line-height:1.5;
 
     color:#555;
 
@@ -398,7 +453,7 @@ nav a:hover {
 
 
 
-.card strong {
+.card strong{
 
     display:block;
 
@@ -412,33 +467,22 @@ nav a:hover {
 
 
 
+
+
 /* ===== УСЛУГИ ===== */
 
-.services {
+
+.services{
 
     padding:70px 40px;
 
     text-align:center;
 
-    background:white;
-
 }
 
 
 
-.services h2 {
-
-    font-size:40px;
-
-    color:#356b3a;
-
-    margin-bottom:40px;
-
-}
-
-
-
-.service-list {
+.service-list{
 
     display:flex;
 
@@ -452,7 +496,7 @@ nav a:hover {
 
 
 
-.service-list div {
+.service-list div{
 
     background:#356b3a;
 
@@ -464,49 +508,28 @@ nav a:hover {
 
     font-size:20px;
 
-    transition:0.3s;
-
 }
 
 
-
-.service-list div:hover {
-
-    transform:translateY(-5px);
-
-    background:#28552e;
-
-}
 
 
 
 /* ===== КОНТАКТЫ ===== */
 
-.contacts {
+
+.contacts{
 
     background:#f6f2e8;
 
     text-align:center;
 
-    padding:70px 30px;
+    padding:70px;
 
 }
 
 
 
-.contacts h2 {
-
-    font-size:40px;
-
-    color:#356b3a;
-
-    margin-bottom:30px;
-
-}
-
-
-
-.contacts p {
+.contacts p{
 
     font-size:22px;
 
@@ -514,21 +537,20 @@ nav a:hover {
 
 
 
-.contacts a {
+.contacts a{
 
     color:#356b3a;
-
-    text-decoration:none;
-
-    font-weight:bold;
 
 }
 
 
 
+
+
 /* ===== FOOTER ===== */
 
-footer {
+
+footer{
 
     background:#356b3a;
 
@@ -539,41 +561,43 @@ footer {
 }
 
 
-
-footer a {
+footer a{
 
     color:white;
 
-    text-decoration:none;
-
     margin:15px;
 
-    font-size:18px;
-
-    transition:0.3s;
+    text-decoration:none;
 
 }
 
 
-
-footer a:hover {
-
-    color:#f5a623;
-
-}
 
 
 
 /* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
 
 
-@media(max-width:768px){
+@media(max-width:900px){
+
+
+header{
+
+    flex-direction:column;
+
+    gap:15px;
+
+    left:15px;
+
+    right:15px;
+
+}
 
 
 
-header {
+nav{
 
-    padding:20px;
+    flex-wrap:wrap;
 
     justify-content:center;
 
@@ -581,28 +605,25 @@ header {
 
 
 
-nav {
+.header-contact{
 
-    text-align:center;
+    flex-wrap:wrap;
 
-}
-
-
-
-nav a {
-
-    font-size:15px;
-
-    margin-left:10px;
+    justify-content:center;
 
 }
 
 
 
-/* ===== ЛОГОТИП ===== */
+.cloud-text{
+
+    font-size:42px;
+
+}
 
 
-.hero-logo img {
+
+.hero-logo img{
 
     width:70px;
 
@@ -612,21 +633,7 @@ nav a {
 
 
 
-/* ===== НАЗВАНИЕ ===== */
-
-
-.cloud-text {
-
-    font-size:42px;
-
-}
-
-
-
-/* ===== ТЕКСТ ===== */
-
-
-.hero h2 {
+.hero h2{
 
     font-size:25px;
 
@@ -634,22 +641,7 @@ nav a {
 
 
 
-.hero p {
-
-    font-size:18px;
-
-    padding:0 20px;
-
-}
-
-
-
-/* ===== КНОПКА ===== */
-
-
-.btn {
-
-    padding:15px 35px;
+.hero p{
 
     font-size:18px;
 
@@ -657,94 +649,11 @@ nav a {
 
 
 
-/* ===== ДОМИКИ ===== */
-
-
-.houses {
-
-    padding:50px 20px;
-
-}
-
-
-
-.houses h2 {
-
-    font-size:32px;
-
-}
-
-
-
-.cards {
+.cards{
 
     flex-direction:column;
 
     align-items:center;
-
-}
-
-
-
-.card {
-
-    width:90%;
-
-}
-
-
-
-/* ===== УСЛУГИ ===== */
-
-
-.services {
-
-    padding:50px 20px;
-
-}
-
-
-
-.services h2 {
-
-    font-size:32px;
-
-}
-
-
-
-.service-list {
-
-    flex-direction:column;
-
-    align-items:center;
-
-}
-
-
-
-.service-list div {
-
-    width:90%;
-
-}
-
-
-
-/* ===== КОНТАКТЫ ===== */
-
-
-.contacts {
-
-    padding:50px 20px;
-
-}
-
-
-
-.contacts h2 {
-
-    font-size:32px;
 
 }
 
