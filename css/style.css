@@ -829,53 +829,16 @@ summary{
 /* ===== FOOTER ===== */
 
 
-@@ -725,6 +852,62 @@ footer a{
+footer{
 
+    background:#356b3a;
 
+    padding:30px;
 
-/* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
-
-
-@media(max-width:900px){
-
-
-header{
-
-    flex-direction:column;
-
-    gap:15px;
-
-    left:15px;
-
-    right:15px;
+    text-align:center;
 
 }
 
-
-.booking-window{
-
-    width:95%;
-
-    padding:25px;
-
-}
-
-
-.booking-window h2{
-
-    font-size:25px;
-
-}
-
-
-summary{
-
-    font-size:18px;
-
-}
-
-
-}
 
 footer a{
 
@@ -890,8 +853,6 @@ footer a{
 
 
 
-
-/* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== *
 
 /* ===== МОБИЛЬНАЯ ВЕРСИЯ ===== */
 
@@ -933,6 +894,8 @@ nav{
 
 
 
+
+
 .cloud-text{
 
     font-size:42px;
@@ -967,6 +930,11 @@ nav{
 
 
 
+
+
+/* ===== ДОМИКИ ===== */
+
+
 .cards{
 
     flex-direction:column;
@@ -985,6 +953,8 @@ nav{
 
 
 
+
+
 /* ===== МОБИЛЬНАЯ БРОНЬ ===== */
 
 
@@ -995,6 +965,66 @@ nav{
     width:90%;
 
     padding:20px;
+
+}
+
+
+
+.booking-field{
+
+    width:100%;
+
+}
+
+
+
+.booking-field input,
+.booking-field select{
+
+    width:100%;
+
+}
+
+
+
+.booking-btn{
+
+    width:100%;
+
+}
+
+
+
+
+
+/* ===== ОКНО БРОНИРОВАНИЯ ===== */
+
+
+.booking-window{
+
+    width:95%;
+
+    padding:25px;
+
+}
+
+
+
+.booking-window h2{
+
+    font-size:25px;
+
+}
+
+
+
+summary{
+
+    font-size:18px;
+
+}
+
+
 
 }
 
