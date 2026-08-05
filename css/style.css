@@ -963,12 +963,10 @@ nav{
 
 }
 
-    /* ===== КОМПАКТНАЯ ПАНЕЛЬ В ОКНЕ БРОНИРОВАНИЯ ===== */
+   /* ===== КОМПАКТНАЯ ПАНЕЛЬ В ОКНЕ БРОНИРОВАНИЯ ===== */
 
 
 .booking-window .booking-mini{
-
-    width:auto;
 
     display:flex;
 
@@ -980,7 +978,13 @@ nav{
 
     gap:10px;
 
-    padding:15px;
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:20px;
+
+    box-sizing:border-box;
 
 }
 
@@ -994,12 +998,26 @@ nav{
 
 
 
+.booking-window .booking-field span{
+
+    font-size:13px;
+
+    margin-bottom:5px;
+
+}
+
+
+
 .booking-window .booking-field input,
 .booking-window .booking-field select{
 
-    width:130px;
+    width:120px;
 
-    height:38px;
+    height:36px;
+
+    border-radius:12px;
+
+    font-size:14px;
 
 }
 
@@ -1009,16 +1027,21 @@ nav{
 
     width:auto;
 
-    height:38px;
+    height:36px;
 
-    padding:0 18px;
+    padding:0 15px;
+
+    white-space:nowrap;
 
 }
 
 
+
 .booking-window{
 
-    width:95%;
+    width:90%;
+
+    max-width:750px;
 
     padding:25px;
 
@@ -1026,24 +1049,20 @@ nav{
 
 
 
-summary{
-
-    font-size:18px;
-
-}
 
 
 /* ===== КАРТОЧКИ В ОКНЕ БРОНИРОВАНИЯ ===== */
+
 
 .room-card{
 
     display:flex;
 
-    gap:20px;
+    gap:15px;
 
-    margin-bottom:20px;
+    margin-bottom:15px;
 
-    padding:20px;
+    padding:15px;
 
     background:rgba(255,255,255,.12);
 
@@ -1053,11 +1072,13 @@ summary{
 
 }
 
+
+
 .room-card img{
 
-    width:140px;
+    width:120px;
 
-    height:100px;
+    height:85px;
 
     object-fit:cover;
 
@@ -1067,11 +1088,15 @@ summary{
 
 }
 
+
+
 .room-info{
 
     flex:1;
 
 }
+
+
 
 .room-footer{
 
@@ -1081,6 +1106,6 @@ summary{
 
     align-items:center;
 
-    margin-top:20px;
+    margin-top:15px;
 
 }
