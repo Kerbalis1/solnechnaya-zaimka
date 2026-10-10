@@ -7,7 +7,7 @@ export const site = {
  phone: null as string | null, address: null as string | null,
  mapUrl: null as string | null, routeUrl: null as string | null,
  messengers: [] as { title: string; url: string }[],
- heroImage: '/images/river.webp' as string | null,
+ heroImage: '/images/river-premium.webp' as string | null,
  objects: [
   { id:'cottage',title:'Коттедж',category:'stay',eyebrow:'Для вашего отдыха',description:'Место для времени с близкими. Выберите даты и уточните условия проживания у владельца.',price:'6 000 ₽',unit:'/ сутки',note:'Аренда коттеджа',image:'/images/cottage.webp',art:'house' },
   { id:'barn-1',title:'Барнхаус № 1',category:'stay',eyebrow:'Отдельный домик',description:'Загородный отдых в стиле барнхаус. Стоимость и детали проживания уточняются при бронировании.',price:'Стоимость по запросу',unit:'',note:'Отдельный домик в стиле барнхаус',image:null,art:'barn' },

@@ -25,6 +25,7 @@ public/images/cottage.webp
 public/images/river-evening.webp
 public/images/river-wide.webp
 public/images/river.webp
+public/images/river-premium.webp
 public/images/sauna.webp
 public/images/territory.webp
 scripts/postbuild.mjs
