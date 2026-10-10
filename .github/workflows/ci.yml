@@ -1,0 +1,43 @@
+name: Check website
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches-ignore: [main]
+permissions:
+  contents: read
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Types and booking rules
+        run: npm run typecheck && npm test
+      - name: GitHub Pages paths
+        shell: bash
+        run: |
+          repository_name="${GITHUB_REPOSITORY#*/}"
+          owner="${GITHUB_REPOSITORY%%/*}"
+          site_path="/$repository_name"
+          if [ "${repository_name,,}" = "${owner,,}.github.io" ]; then
+            site_path=""
+          fi
+          echo "NEXT_PUBLIC_BASE_PATH=$site_path" >> "$GITHUB_ENV"
+          echo "NEXT_PUBLIC_SITE_URL=https://$owner.github.io$site_path" >> "$GITHUB_ENV"
+      - name: Production export
+        run: npm run build
+      - name: Retain static build
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-static-${{ github.sha }}
+          path: out/
+          include-hidden-files: true
+          retention-days: 7
